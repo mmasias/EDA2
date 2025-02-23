@@ -57,9 +57,9 @@ public int busquedaBinaria(int[] arrayOrdenado, int objetivo) {
 }
 ```
 
-|Tamaño<br>*n*|Operaciones<br><small>en array desordenado</small>|Operaciones<br><small>en array ordenado|Tiempo*<br><small>en desordenado|Tiempo*<br><small>en ordenado|¡La diferencia!|
+|Tamaño<br>*n*|Operaciones<br><small>busquedaLineal()</small>|Operaciones<br><small>busquedaBinaria()</small>|Tiempo*<br><small>busquedaLineal()|Tiempo*<br><small>busquedaBinaria()|¡La diferencia!|
 |-:|-:|-:|-|-|-|
-|1|1|0|0.000001 s|0 s|=|
+|1|1|1|0.000001 s|0.000001  s|=|
 |10|10|3.32|0.00001 s|0.00000332 s|3x más rápido|
 |100|100|6.64|0.0001 s|0.00000664 s|15x más rápido|
 |1,000|1,000|9.97|0.001 s|0.00000997 s|100x más rápido|
