@@ -1,7 +1,7 @@
 # Temario
 
 - [x] [Estructuras de datos](01-estructurasDeDatos/README.md)
-- [ ] Algoritmos
+- [x] [Algoritmos](02-algoritmos/README.md)
 - [ ] Recursividad
 - [ ] Ordenación
 - [ ] Búsquedas
