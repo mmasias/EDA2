@@ -33,97 +33,35 @@ Se enfoca en el crecimiento a largo plazo, permitiendo comparar la eficiencia de
 
 |Eficiencia|Rendimiento|Escalabilidad|
 |-|-|-|
-Facilita la comparación entre algoritmos para elegir el más adecuado basado en su comportamiento esperado con grandes volúmenes de datos.|Identifica cuellos de botella y guía el proceso de optimización al mostrar dónde se ganará más reduciendo la complejidad.|Ayuda a entender cómo un algoritmo manejará un aumento en el tamaño de los datos, lo cual es vital para sistemas que deben ser capaces de escalar.
+|Facilita la comparación entre algoritmos para elegir el más adecuado basado en su comportamiento esperado con grandes volúmenes de datos.|Identifica cuellos de botella y guía el proceso de optimización al mostrar dónde se ganará más reduciendo la complejidad.|Ayuda a entender cómo un algoritmo manejará un aumento en el tamaño de los datos, lo cual es vital para sistemas que deben ser capaces de escalar.|
 
 ## ¿Cómo?
 
-Para aplicar la notación Big O en la práctica, se sigue un proceso de identificación del peor escenario posible, simplificación de la fórmula de complejidad para resaltar el [término dominante](terminoDominante.md), y clasificación del algoritmo en una categoría de complejidad. 
+Para aplicar la notación Big O en la práctica, se sigue un proceso de identificación del peor escenario posible, simplificación de la fórmula de complejidad para resaltar el [término dominante](terminoDominante.md), y clasificación del algoritmo en una categoría de complejidad.
 
 Este análisis permite a los desarrolladores entender y predecir el rendimiento de los algoritmos en diferentes condiciones, facilitando decisiones informadas sobre diseño e implementación.
 
-- **Evaluar el peor caso**: Analiza el escenario más desfavorable en términos de tiempo o espacio.
-- **Simplificar la expresión**: Reduce la fórmula de complejidad al término que más crece con el tamaño de la entrada, ignorando constantes y términos menores.
-- **Clasificar la complejidad**: Usa la notación para categorizar la complejidad del algoritmo, como O(1), O(n *log n*), O(n²), etc., basándose en la expresión simplificada.
+- **Evaluar el peor caso**: Analizar el escenario más desfavorable en términos de tiempo o espacio.
+- **Simplificar la expresión**: Reducir la fórmula de complejidad al término que más crece con el tamaño de la entrada, ignorando constantes y términos menores.
+- **Clasificar la complejidad**: Usar la notación para categorizar la complejidad del algoritmo, como O(1), O(n *log n*), O(n²), etc., basándose en la expresión simplificada.
 
 [Categorías principales de complejidad](categorias.md)
 
+### Identificación en la práctica
 
-##### Identificación en la práctica
-
-- **Conteo de operaciones**: Para identificar la complejidad, cuenta cómo crece el número de operaciones necesarias a medida que aumenta N. Si el número de operaciones se duplica cada vez que añades un elemento, piensa en O(2^N). Si el crecimiento parece relacionarse con el cuadrado o el cubo del tamaño de entrada, piensa en O(N²) o O(N³), respectivamente.
-- **Estructura del algoritmo**: Examina la estructura del algoritmo. La presencia de bucles anidados o llamadas recursivas múltiples suele ser un indicador claro de la complejidad.
+- **Conteo de operaciones**: Para identificar la complejidad, se cuenta cómo crece el número de operaciones necesarias a medida que aumenta N. Si el número de operaciones se duplica cada vez que añades un elemento, se piensa en O(2^N). Si el crecimiento parece relacionarse con el cuadrado o el cubo del tamaño de entrada, se piensa en O(N²) o O(N³), respectivamente.
+- **Estructura del algoritmo**: Examinar la estructura del algoritmo: la presencia de bucles anidados o llamadas recursivas múltiples suele ser un indicador claro de la complejidad.
 - **Divide y vencerás**: Los algoritmos de divide y vencerás que parten el problema en mitades (o fracciones constantes) tienden a tener una complejidad O(log N), especialmente si se resuelve una mitad a la vez o si la combinación de soluciones es lineal o logarítmica.
 
 La identificación precisa de la complejidad algorítmica a menudo requiere descomponer el algoritmo en sus componentes básicos y analizar cómo cada parte contribuye al rendimiento general en función del tamaño de entrada.
 
-### Ejemplo
+<div align="center">
 
-```java
-public int findMax(int[] array) {
-    int max = array[0];
-    for (int i = 1; i < array.length; i++) {
-        if (array[i] > max) {
-            max = array[i];
-        }
-    }
-    return max;
-}
-```
-#### 1. Análisis línea por línea
+|[sumArray](ejemploA.md)|[Búsqueda binaria](ejemploB.md)|[findMax](ejemploC.md)|
+|:-:|:-:|:-:|
+|O(N)|O(log N)|O(N)|
 
-- `int max = array[0];`
-  - Acceso directo a un elemento del array: O(1)
-  - Asignación de variable: O(1)
-  - Total línea: **O(1)**, se ejecuta 1 vez
-- `for (int i = 1; i < array.length; i++)`
-  - Inicialización i=1: O(1), se ejecuta 1 vez
-  - Comparación i < array.length: O(1), se ejecuta n veces
-  - Incremento i++: O(1), se ejecuta n-1 veces
-  - Total línea: **O(n)**
-- `if (array[i] > max)`
-  - Acceso al elemento array[i]: O(1)
-  - Comparación con max: O(1)
-  - Se ejecuta n-1 veces dentro del loop
-  - Total línea: **O(1) * (n-1) = O(n)**
-- `max = array[i];`
-  - Acceso al elemento array[i]: O(1)
-  - Asignación: O(1)
-  - Se ejecuta hasta n-1 veces (peor caso)
-  - Total línea: **O(1) * (n-1) = O(n)**
-- `return max;`
-  - Retorno de valor: O(1)
-  - Se ejecuta 1 vez
-  - Total línea: O(1)
-
-#### 2. Suma total de operaciones
-
-```
-T(n) = 1      ---> Línea 1: inicialización
-     + (n-1)  ---> Línea 2: iteraciones del for
-     + (n-1)  ---> Línea 3: comparaciones en el if
-     + (n-1)  ---> Línea 4: asignaciones en peor caso
-     + 1      ---> Línea 5: retorno
-```
-
-#### 3. Simplificación
-
-1. Agrupamos términos:
-   ```
-   T(n) = [1 + 1] + [3(n-1)]
-   T(n) = 2 + 3n - 3
-   T(n) = 3n - 1
-   ```
-2. Aplicamos las reglas de simplificación de Big O:
-   - Eliminamos constantes: 3n → n
-   - Eliminamos términos no dominantes: 3n - 1 → n
-3. Resultado final: O(n)
-
-#### 4. Verificación intuitiva
-
-- El algoritmo necesita mirar cada elemento una vez
-- No hay bucles anidados
-- Las operaciones dentro del bucle son constantes
-- Por lo tanto, O(n) tiene sentido para este algoritmo
+</div>
 
 ### ¿Y ahora qué?
 
@@ -149,4 +87,4 @@ Para profundizar en el análisis de algoritmos, se propone:
 - Compromisos en el mundo real.
 - Cuando la optimización prematura es el enemigo.
 - Equilibrio entre legibilidad y rendimiento.
-- ¡Practicar!
+- ¡Practicar! [Con](https://github.com/puntoReflex/.github/blob/viajeMarco/EDA2/BigO/retos%26proyectos/viajeMarco/src/vEDA2/README.md) [nuestros](https://github.com/puntoReflex/pyCCCF/blob/EDA2/src/vEDA2/README.md) [ejemplos](https://github.com/puntoReflex/pyAspiradora/blob/vEDA2/src/vEDA2/README.md).
