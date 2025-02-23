@@ -34,7 +34,8 @@ static final int NO_ENCONTRADO = -1;
 
 public int busquedaLineal(int[] array, int objetivo) {
     for (int i = 0; i < array.length; i++) {
-        if (array[i] == objetivo) return i;
+        if (array[i] == objetivo)
+          return i;
     }
     return NO_ENCONTRADO;
 }
@@ -45,9 +46,12 @@ public int busquedaBinaria(int[] arrayOrdenado, int objetivo) {
     
     while (inicio <= fin) {
         int medio = (inicio + fin) / 2;
-        if (arrayOrdenado[medio] == objetivo) return medio;
-        if (arrayOrdenado[medio] < objetivo) inicio = medio + 1;
-        else fin = medio - 1;
+        if (arrayOrdenado[medio] == objetivo)
+            return medio;
+        if (arrayOrdenado[medio] < objetivo)
+            inicio = medio + 1;
+        else
+            fin = medio - 1;
     }
     return NO_ENCONTRADO;
 }
