@@ -2,127 +2,86 @@
 
 ## ¿Por qué?
 
-Dado que para aplicar la notación Big O en la práctica se sigue un proceso de identificación del peor escenario posible, simplificación de la fórmula de complejidad para resaltar el término dominante y clasificación del algoritmo en una categoría de complejidad.
+En el análisis de complejidad algorítmica mediante [Big O](theBigO.md), necesitamos identificar qué parte de nuestro algoritmo tendrá el mayor impacto en su rendimiento cuando la entrada crece significativamente. Esta identificación es crucial porque nos permite simplificar nuestro análisis y centrarnos en lo que realmente importa al evaluar el rendimiento a gran escala.
 
 ## ¿Qué?
 
-El **término dominante** en una fórmula de complejidad de tiempo (o espacio) es el componente que crece más rápidamente con respecto al tamaño de la entrada, N, cuando N se acerca al infinito. 
+El término dominante es el componente de una fórmula de complejidad que crece más rápidamente con respecto al tamaño de la entrada (N) cuando N se acerca al infinito.
 
-## ¿Para qué?
+Por ejemplo, en una fórmula como:
 
-La identificación del término dominante es crucial para la notación Big O porque este término determina la clasificación de la complejidad del algoritmo.
+<div align=center>
 
-## ¿Cómo?
-
-Para encontrar el término dominante, sigamos estos pasos:
-
-- **Escribir la fórmula de complejidad completa**: Esto puede incluir varios términos que describen diferentes partes del algoritmo, como bucles anidados, operaciones recursivas, operaciones aritméticas directas, entre otros.
-- **Analizar el comportamiento de cada término a medida que N crece**: Considerar cómo cada parte de la fórmula cambia a medida que el tamaño de la entrada se hace muy grande.
-- **Identificar el término que crece más rápidamente**: Este será el término cuyo tamaño aumenta más rápidamente en comparación con los demás a medida que N se hace grande. Los términos comunes incluyen N, N², N³, 2^N, log(N), etc.
-- **Simplificar la expresión eliminando términos no dominantes y constantes**: Los términos que crecen más lentamente y las constantes multiplicativas no afectan la clasificación de complejidad en la notación Big O, por lo que se pueden omitir para simplificar la expresión.
-
-<div align="center">
-
-|Fórmula de complejidad|Término dominante|Notación BigO
-|-|:-:|:-:|
-|7N³ + 15N² + 2N + 8|N³|O(N³)
+```
+T(n) = 3n³ + 2n² + 5n + 1
+```
 
 </div>
 
-### Ejemplo A
+El término dominante es 3n³, ya que crece mucho más rápido que los otros términos cuando n es grande.
 
-```java
-public class SumArray {
+## ¿Para qué?
 
-    public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 5};
-        System.out.println("La suma de los elementos del arreglo es: " + sumArray(array));
-    }
+La identificación del término dominante nos permite:
 
-    private static int sumArray(int[] array) {
-        int sum = 0;
-        for(int i = 0; i < array.length; i++) {
-            sum += array[i];
-        }
-        return sum;
-    }
-}
-```
+<div align=center>
 
-#### Análisis del algoritmo sumArray
-
-##### Identificación de las operaciones y su complejidad
-
-||||
+|Simplificación|Clasificación|Comparación|
 |-|-|-|
-Inicialización de la suma|Esta operación se realiza una sola vez, independientemente del tamaño del arreglo. Por lo tanto, su complejidad es constante|`O(1)`
-Bucle `for`|Este bucle se ejecuta una vez por cada elemento en el arreglo. Si el arreglo tiene N elementos, el bucle se ejecutará N veces.|`O(N)`
-Operación dentro del bucle|Operación de suma **pero** dentro del bucle: La suma (sum += array[i]) se realiza una vez|`O(1)` por operación, pero `O(N)` al estar dentro de un bucle
-Retorno de la suma|Al igual que la inicialización, el retorno de la suma es una operación que se realiza una sola vez|`O(1)`
+|Reducir fórmulas complejas a su esencia, facilitando el análisis|Determinar la categoría de complejidad del algoritmo|Comparar diferentes algoritmos basándonos en su comportamiento a gran escala|
 
-##### Suma de complejidades
+</div>
 
-`O(1) + O(N) + O(N) + O(1) --> 2O(1) + 2O(N)`
+## ¿Cómo?
 
-##### Simplificación & enfatizado del término dominante
+### Proceso de identificación
 
-Dado que en un análisis de complejidad estamos interesados en el comportamiento asintótico para grandes valores de N, las constantes y los términos de menor crecimiento (como O(1)) se consideran insignificantes frente al término de mayor crecimiento.
+1. Escribir la fórmula completa
+   - Identificar todas las operaciones que realiza el algoritmo
+   - Expresar cada parte en términos del tamaño de entrada N
+   - Incluir constantes multiplicativas
+1. Comparar términos
+   - Ordenar los términos por tasa de crecimiento
+   - Evaluar el comportamiento con valores grandes de N
+   - Identificar qué término domina cuando N crece
+1. Simplificar
+   - Eliminar constantes multiplicativas
+   - Eliminar términos no dominantes
+   - Expresar en notación Big O
 
-Por lo tanto, simplificamos la expresión a O(N), que es el término dominante.
+### Jerarquía de crecimiento
 
-### Ejemplo B
+De menor a mayor tasa de crecimiento:
 
-Vamos a explorar otro ejemplo clásico de algoritmo y su análisis de complejidad: un algoritmo de búsqueda binaria en un arreglo **ordenado**. Este ejemplo es interesante porque la búsqueda binaria tiene una complejidad diferente a la de algoritmos como la suma de elementos de un arreglo.
+<div align=center>
 
-```java
-public class BinarySearch {
-    public static int binarySearch(int[] array, int target) {
-        int left = 0;
-        int right = array.length - 1;
-
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-
-            if (array[mid] == target) {
-                return mid; 
-            }
-            if (array[mid] < target) {
-                left = mid + 1;
-            } else {
-                right = mid - 1;
-            }
-        }
-        return -1;
-    }
-
-    public static void main(String[] args) {
-        int[] array = {1, 3, 5, 7, 9, 11}; 
-        int target = 7;
-        int result = binarySearch(array, target);
-        if (result == -1) {
-            System.out.println("Elemento no encontrado en el arreglo.");
-        } else {
-            System.out.println("Elemento encontrado en el índice: " + result);
-        }
-    }
-}
-
-```
-#### Análisis del algoritmo de Búsqueda Binaria
-
-##### Identificación de las operaciones y su complejidad
-
-|Componente|Descripción|Complejidad|
+|Notación|Nombre|Ejemplo típico|
 |-|-|-|
-|Inicialización              | Las operaciones de inicialización (`left = 0`, `right = array.length - 1`) son constantes y se ejecutan una sola vez. | `O(1)`       |
-|Bucle `while`               | Este bucle reduce el tamaño del problema a la mitad en cada iteración. El número de iteraciones es proporcional a (log N). | `O(log N)`   |
-|Operaciones dentro del bucle| Calcular el medio, comparar el valor y actualizar los límites son todas operaciones constantes, pero contribuyen al total de la complejidad del bucle. | `O(1)` por operación, implicado en `O(log N)`|
-|Retorno                     | El retorno del índice del elemento o -1 es una operación constante realizada una vez al final.                   | `O(1)`       |
+|O(1)|Constante|Acceso a un array por índice|
+|O(log n)|Logarítmico|Búsqueda binaria|
+|O(n)|Lineal|Recorrer un array una vez|
+|O(n log n)|Lineal logarítmico|Merge sort|
+|O(n²)|Cuadrático|Bucles anidados simples|
+|O(2ⁿ)|Exponencial|Fibonacci recursivo|
 
-##### Suma de complejidades
+</div>
 
-`O(1) + O(log N) + O(1) --> O(log N) + 2O(1)`
+### Ejemplos prácticos
 
-##### Simplificación & enfatizado del término dominante
+1. **Fórmula: 7n³ + 15n² + 2n + 8**
+   - n = 10: 7(1000) + 15(100) + 2(10) + 8 = 7000 + 1500 + 20 + 8 = 8528
+   - n = 100: 7(1000000) + 15(10000) + 2(100) + 8 = 7000000 + 150000 + 200 + 8 = 7150208
+   - Término dominante: 7n³
+   - Notación Big O: O(n³)
+1. **Fórmula: 5n log n + 3n + 2**
+   - n = 10: 5(10)(3.32) + 3(10) + 2 = 166 + 30 + 2 = 198
+   - n = 100: 5(100)(6.64) + 3(100) + 2 = 3320 + 300 + 2 = 3622
+   - Término dominante: 5n log n
+   - Notación Big O: O(n log n)
 
-Al simplificar y enfocarnos en el término de mayor crecimiento, las constantes y los términos de menor crecimiento son considerados insignificantes frente al término dominante. Por lo tanto, aunque técnicamente incluimos todas las operaciones en el análisis inicial, el resultado final se simplifica a `O(log N)`, reflejando la eficiencia de la búsqueda binaria en conjuntos de datos ordenados.
+### Tips para identificación rápida
+
+- Los términos exponenciales (2ⁿ) siempre dominan sobre los polinomiales
+- Entre términos polinomiales, el de mayor exponente domina
+- Los términos logarítmicos crecen más lentamente que los lineales
+- Las constantes y los términos de menor grado pueden ignorarse
