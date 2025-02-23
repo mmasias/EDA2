@@ -27,6 +27,8 @@ Los algoritmos son procedimientos o fórmulas para resolver problemas. Pueden se
 |Determinar las restricciones y casos especiales|Identificar patrones y estructuras de datos apropiadas|Considerar el uso de memoria|
 |Considerar el volumen de datos a manejar|Considerar diferentes enfoques (iterativo vs recursivo, etc.)|Identificar posibles cuellos de botella|
 
+### Ej.: una búsqueda
+
 ```java
 static final int NO_ENCONTRADO = -1;
 
