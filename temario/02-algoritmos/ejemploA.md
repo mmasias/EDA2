@@ -31,7 +31,7 @@ public class SumArray {
 
 ### Suma de complejidades
 
-`O(1) + O(N) + O(N) + O(1) --> 2O(1) + 2O(N)`
+`O(1) + O(N) + O(N) + O(1) --> 2·O(1) + 2·O(N)`
 
 ### Simplificación & enfatizado del término dominante
 
