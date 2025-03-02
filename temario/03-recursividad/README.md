@@ -10,4 +10,5 @@
 
 - [Introducción.](introduccion.md)
 - [Recursividad vs iteración.](recursividadVsIteracion.md)
+- Backtracking
 - Algunos (pocos) ejemplos clásicos.
