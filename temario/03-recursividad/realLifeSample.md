@@ -1,6 +1,6 @@
 # Una función recursiva
 
-> [calculaNutrientes](https://github.com/mmasias/NutrIber/blob/d6a1b1c738fc4c536740ae636dd389f83a0e6998/fuentes.DEBUG/mFuncionesGenerales.bas#L169)
+> [calculaNutrientes](https://github.com/mmasias/NutrIber/blob/d6a1b1c738fc4c536740ae636dd389f83a0e6998/fuentes.DEBUG/mFuncionesGenerales.bas#L169) / [📖](/src/casosDeUso/recursividad/CalculaNutrientes.bas)
 
 ## Estructura
 
