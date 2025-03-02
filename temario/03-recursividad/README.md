@@ -157,6 +157,10 @@ public static void cuentaAtrasAdelante(int number) {
 }
 ```
 
+<details>
+
+<summary>Detalle de operaciones para cuentaAtrasAdelante(3)</summary>
+
 <div align=center>
 
 |Fase de descenso|Caso base|Fase de ascenso|
@@ -171,6 +175,8 @@ public static void cuentaAtrasAdelante(int number) {
 |||3 volviendo
 
 </div>
+
+</details>
 
 ## ¿Para qué?
 
