@@ -26,7 +26,21 @@ La recursión puede definirse desde diferentes perspectivas:
 
 </div>
 
-### Componentes esenciales
+## ¿Para qué?
+
+La recursión se utiliza para diversos propósitos prácticos en programación:
+
+- **Simplificar problemas complejos**: Dividir un problema grande en instancias más pequeñas y similares del mismo problema.
+- **Recorrer estructuras de datos jerárquicas**: Árboles, grafos y estructuras anidadas se recorren naturalmente de forma recursiva.
+- **Implementar algoritmos elegantes**: Muchos algoritmos clásicos como QuickSort, MergeSort, recorrido de árboles binarios, etc., tienen implementaciones recursivas claras.
+- **Resolver problemas matemáticos**: Cálculos como factorial, secuencia de Fibonacci, o el algoritmo de Euclides se expresan naturalmente mediante recursión.
+- **Backtracking**: Problemas como el de las N-Reinas, generación de permutaciones o solución de laberintos utilizan recursión para explorar diferentes caminos.
+
+La recursión es especialmente útil cuando un problema puede descomponerse en subproblemas más pequeños de la misma naturaleza, y cuando esos subproblemas a su vez pueden descomponerse de la misma manera.
+
+## ¿Cómo?
+
+### Definiciones esenciales
 
 Para entender la recursión, es necesario comprender dos conceptos clave:
 
@@ -171,20 +185,6 @@ public static void cuentaAtrasAdelante(int number) {
 </div>
 
 </details>
-
-## ¿Para qué?
-
-La recursión se utiliza para diversos propósitos prácticos en programación:
-
-- **Simplificar problemas complejos**: Dividir un problema grande en instancias más pequeñas y similares del mismo problema.
-- **Recorrer estructuras de datos jerárquicas**: Árboles, grafos y estructuras anidadas se recorren naturalmente de forma recursiva.
-- **Implementar algoritmos elegantes**: Muchos algoritmos clásicos como QuickSort, MergeSort, recorrido de árboles binarios, etc., tienen implementaciones recursivas claras.
-- **Resolver problemas matemáticos**: Cálculos como factorial, secuencia de Fibonacci, o el algoritmo de Euclides se expresan naturalmente mediante recursión.
-- **Backtracking**: Problemas como el de las N-Reinas, generación de permutaciones o solución de laberintos utilizan recursión para explorar diferentes caminos.
-
-La recursión es especialmente útil cuando un problema puede descomponerse en subproblemas más pequeños de la misma naturaleza, y cuando esos subproblemas a su vez pueden descomponerse de la misma manera.
-
-## ¿Cómo?
 
 Para implementar correctamente una función recursiva, deben seguirse estos pasos:
 
