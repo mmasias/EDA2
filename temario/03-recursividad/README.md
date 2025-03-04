@@ -8,7 +8,8 @@
 
 <img src="../../images/arbolFractal.webp" width=40% align=right>
 
-- [Introducción.](introduccion.md)
-- [Recursividad vs iteración.](recursividadVsIteracion.md)
-- Backtracking
-- Algunos (pocos) ejemplos clásicos.
+- [Introducción](introduccion.md).
+- [Recursividad vs iteración](recursividadVsIteracion.md).
+- [El orden de los factores altera el producto](elOrden.md).
+- [Backtracking](backtracking.md).
+- [Algunos (pocos) ejemplos clásicos & reales...](vademecum.md).

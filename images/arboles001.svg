@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="297px" preserveAspectRatio="none" style="width:198px;height:297px;background:#FFFFFF;" version="1.1" viewBox="0 0 198 297" width="198px" zoomAndPan="magnify"><defs/><g><!--MD5=[7fa0c39d1c3af83d477b170083073713]
+class a--><g id="elem_a"><rect codeLine="4" fill="#F1F1F1" height="26.2969" id="a" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="14" x="81.5" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="84.5" y="24.9951">a</text></g><!--MD5=[e373b81aa261186aa76acdb762bff33c]
+class b--><g id="elem_b"><rect fill="#F1F1F1" height="26.2969" id="b" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="15" x="56" y="93"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9" x="59" y="110.9951">b</text></g><!--MD5=[e3471f280e59d1431a9a122c0f31e779]
+class c--><g id="elem_c"><rect fill="#F1F1F1" height="26.2969" id="c" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="14" x="106.5" y="93"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="109.5" y="110.9951">c</text></g><!--MD5=[8b21583645572a35575c72f7bec0a7ec]
+class d--><g id="elem_d"><rect fill="#F1F1F1" height="26.2969" id="d" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="15" x="7" y="179"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9" x="10" y="196.9951">d</text></g><!--MD5=[5c040679990284a825a3903b11c133d5]
+class e--><g id="elem_e"><rect fill="#F1F1F1" height="26.2969" id="e" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="15" x="57" y="179"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9" x="60" y="196.9951">e</text></g><!--MD5=[8e3b26001ed7fc73d74731e9849c2493]
+class h--><g id="elem_h"><rect fill="#F1F1F1" height="26.2969" id="h" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="15" x="35" y="265"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9" x="38" y="282.9951">h</text></g><!--MD5=[56046e82fe97abd77c7fc3b96c159469]
+class i--><g id="elem_i"><rect fill="#F1F1F1" height="26.2969" id="i" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="9" x="85" y="265"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="3" x="88" y="282.9951">i</text></g><!--MD5=[30e1e2e54820aeb8f00ba1f2eeda163a]
+class f--><g id="elem_f"><rect fill="#F1F1F1" height="26.2969" id="f" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="10" x="108.5" y="179"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="111.5" y="196.9951">f</text></g><!--MD5=[1c44201a84307e68bbc50e05181386cc]
+class g--><g id="elem_g"><rect fill="#F1F1F1" height="26.2969" id="g" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="15" x="154" y="179"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9" x="157" y="196.9951">g</text></g><!--MD5=[ff46fec121a08431fef4f271514ea7f5]
+class j--><g id="elem_j"><rect fill="#F1F1F1" height="26.2969" id="j" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="9" x="131" y="265"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="3" x="134" y="282.9951">j</text></g><!--MD5=[9a03ff78f0bb5f9f1535e6c6919004be]
+class k--><g id="elem_k"><rect fill="#F1F1F1" height="26.2969" id="k" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="14" x="175.5" y="265"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="178.5" y="282.9951">k</text></g><!--MD5=[a3deb68e4aebbeb113ddd128f6b25b58]
+link a to b--><g id="link_a_b"><path codeLine="6" d="M84.92,33.04 C80.65,47.38 73.48,71.46 68.63,87.78 " fill="none" id="a-to-b" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="67.08,92.99,73.4606,85.4875,68.4931,88.1939,65.7868,83.2264,67.08,92.99" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d6047f197d3927fefc7f7c2751c9df28]
+link a to c--><g id="link_a_c"><path codeLine="7" d="M92.08,33.04 C96.35,47.38 103.52,71.46 108.37,87.78 " fill="none" id="a-to-c" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="109.92,92.99,111.2132,83.2264,108.5069,88.1939,103.5394,85.4875,109.92,92.99" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[77137859349a88cf144d11c2377806f3]
+link b to d--><g id="link_b_d"><path codeLine="8" d="M56.48,119.04 C47.97,133.63 33.57,158.3 24.05,174.62 " fill="none" id="b-to-d" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="21.51,178.99,29.4976,173.2282,24.0276,174.6701,22.5857,169.2001,21.51,178.99" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[ead6c585707f27584d13e9a8010ea145]
+link b to e--><g id="link_b_e"><path codeLine="9" d="M63.64,119.04 C63.81,133.38 64.1,157.46 64.29,173.78 " fill="none" id="b-to-e" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="64.36,178.99,68.2569,169.9449,64.3029,173.9903,60.2574,170.0363,64.36,178.99" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[8cfdc7330450fc4a0578af75c3de1cb4]
+link e to h--><g id="link_e_h"><path codeLine="10" d="M61.35,205.04 C57.59,219.38 51.28,243.46 47.01,259.78 " fill="none" id="e-to-h" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="45.65,264.99,51.783,257.2838,46.9063,260.1504,44.0397,255.2737,45.65,264.99" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[a185da4cb047bb69466c81d1f9f92ad2]
+link e to i--><g id="link_e_i"><path codeLine="11" d="M68.08,205.04 C72.35,219.38 79.52,243.46 84.37,259.78 " fill="none" id="e-to-i" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="85.92,264.99,87.2132,255.2264,84.5069,260.1939,79.5394,257.4875,85.92,264.99" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f15c69505a80b2add5b1de1ad3d5a81e]
+link c to f--><g id="link_c_f"><path codeLine="12" d="M113.5,119.04 C113.5,133.38 113.5,157.46 113.5,173.78 " fill="none" id="c-to-f" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="113.5,178.99,117.5,169.99,113.5,173.99,109.5,169.99,113.5,178.99" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[1e8554f22c45ad8ba244bc48ea5321b1]
+link c to g--><g id="link_c_g"><path codeLine="13" d="M120.38,119.04 C128.72,133.63 142.82,158.3 152.14,174.62 " fill="none" id="c-to-g" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="154.64,178.99,153.6512,169.1909,152.1608,174.6479,146.7038,173.1575,154.64,178.99" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d82b6b9ae661c406cefbffa98a02c12a]
+link g to j--><g id="link_g_j"><path codeLine="14" d="M157.77,205.04 C153.3,219.51 145.75,243.88 140.7,260.2 " fill="none" id="g-to-j" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="139.22,264.99,145.7085,257.5806,140.7024,260.2148,138.0683,255.2087,139.22,264.99" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[11db310ab48bc0f4051d08a7743c60f0]
+link g to k--><g id="link_g_k"><path codeLine="15" d="M164.51,205.04 C168.1,219.38 174.12,243.46 178.19,259.78 " fill="none" id="g-to-k" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="179.5,264.99,181.191,255.2874,178.284,260.1401,173.4312,257.2331,179.5,264.99" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[e341ad8fa78a6c08b8cc9e6709a16b65]
+@startuml
+hide class circle
+hide empty members
+
+class a
+
+a -d-> b
+a -d-> c
+b -d-> d
+b -d-> e
+e -d-> h 
+e -d-> i
+c -d-> f 
+c -d-> g 
+g -d-> j
+g -d-> k
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: es
+Country: ES
+--></g></svg>
