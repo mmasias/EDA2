@@ -8,6 +8,11 @@ public class Queens {
         this.queensQuantity = queensQuantity;
     }
 
+    public static void main(String[] args) {
+        Queens queen = new Queens(8);
+        queen.solveNQ();
+    }
+
     boolean canPutQueen(int board[][], int row, int col) {
         for (int i = 0; i < col; i++)
             if (board[row][i] == 1)
@@ -40,7 +45,7 @@ public class Queens {
                     return true;
 
                 board[i][col] = 0;
-                traza("Quitando la reina de (" + col + ", " + i + "):");
+                traza("¡Vuelta atrás! Quito la reina de (" + col + ", " + i + "):");
                 printBoard(board);  
             } else {
                 traza("No se puede colocar en (" + col + ", " + i + ") - Paso a la siguiente fila");
@@ -81,10 +86,5 @@ public class Queens {
     static void traza(String mensaje){
         System.out.print(" [TRAZA] > " + mensaje);
         new Scanner(System.in).nextLine();
-    }
-
-    public static void main(String[] args) {
-        Queens queen = new Queens(8);
-        queen.solveNQ();
     }
 }
