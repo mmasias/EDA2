@@ -39,31 +39,26 @@ Comprender estos patrones permite:
 [Inversión de cadenas](inversionCadenas.md)
 </td></tr>
 <tr>
-    <td>Flujo de ejecución con [5, 2, 4, 8]</td>
+    <td>Flujo de ejecución con [2, 4, 8]</td>
     <td>Flujo de ejecución con "CAT":</td>
 </tr>
 <tr><td valign=top>
-<small>
 
 ```
-sumar([5, 2, 4, 8])
-├─ cabeza = 5
-└─ 5 + sumar([2, 4, 8])
-              ├─ cabeza = 2
-              └─ 2 + sumar([4, 8])
-                        ├─ cabeza = 4
-                        └─ 4 + sumar([8])
-                                  ├─ cabeza = 8
-                                  └─ 8 + sumar([])
-                                            ├─ retorna 0
-                                            └─ 8 + 0 = 8
-                                  └─ 4 + 8 = 12
-                        └─ 2 + 12 = 14
-              └─ 5 + 14 = 19
+sumar([2, 4, 8])
+       ├─ cabeza = 2
+       └─ 2 + sumar([4, 8])
+                 ├─ cabeza = 4
+                 └─ 4 + sumar([8])
+                           ├─ cabeza = 8
+                           └─ 8 + sumar([])
+                                     ├─ retorna 0
+                                     └─ 8 + 0 = 8
+                           └─ 4 + 8 = 12
+                 └─ 2 + 12 = 14
 ```
 
 </td><td valign=top>
-<small>
 
 ```
 invertir("CAT")
