@@ -1,0 +1,85 @@
+@startuml
+
+package "" as algoritmo {
+
+        object "[5, 2, 4, 8]" as sum0call {
+        }
+
+    object "sum([5, 2, 4, 8]) -> return 19" as sum1return {
+        return = 19
+    }
+
+    package "" as contexto4 {
+        object "sum([]) -> return 0" as sum5return {
+            return = 0
+        }
+        object "sum([8]) -> call" as sum4call {
+            numbers = [8]
+            head = 8
+            tail = []
+        }
+
+    }
+
+    package "" as contexto3 {
+        object "sum([4, 8]) -> call" as sum3call {
+            numbers = [4, 8]
+            head = 4
+            tail = [8]
+        }
+        object "sum([8]) -> return 8" as sum4return {
+            return = 8
+        }
+
+    }
+
+    package "" as contexto2{
+        object "sum([2, 4, 8]) -> call" as sum2call {
+            numbers = [2, 4, 8]
+            head = 2
+            tail = [4, 8]
+        }
+        object "sum([4, 8]) -> return 12" as sum3return {
+            return = 12
+        }
+
+    }
+
+    package "" as contexto  {
+        object "sum([5, 2, 4, 8]) -> call" as sum1call {
+            numbers = [5, 2, 4, 8]
+            head = 5
+            tail = [2, 4, 8]
+        }
+
+        object "sum([2, 4, 8]) -> return 14" as sum2return {
+            return = 14
+        }
+    }
+
+    object "sum([]) -> call" as sum5call {
+        numbers = []
+        head = null
+        tail = []
+    }
+
+    sum0call -d-> sum1call : call
+    sum1call -d-> sum2call : call
+    sum2call -d-> sum3call : call
+    sum3call -d-> sum4call : call
+    sum4call -d-> sum5call : call
+    
+    sum5call --u-> sum5return : return 0
+    sum5return -u-> sum4return : return 8
+    sum4return -u-> sum3return : return 12
+    sum3return -u-> sum2return : return 14
+    sum2return -u-> sum1return : return 19
+
+    sum5return <.l.. sum4call : 8
+    sum4return <.l.. sum3call : 4
+    sum3return <.l.. sum2call : 2
+    sum2return <.l.. sum1call : 5
+
+}
+
+@enduml
