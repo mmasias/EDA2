@@ -49,12 +49,12 @@ sumar([2, 4, 8])
        ├─ cabeza = 2
        └─ 2 + sumar([4, 8])
                  ├─ cabeza = 4
-                 └─ 4 + sumar([8])
-                           ├─ cabeza = 8
-                           └─ 8 + sumar([])
-                                     ├─ retorna 0
-                                     └─ 8 + 0 = 8
-                           └─ 4 + 8 = 12
+                 ├─ 4 + sumar([8])
+                 |         ├─ cabeza = 8
+                 |         ├─ 8 + sumar([])
+                 |         |         ├─ retorna 0
+                 |         |         └─ 8 + 0 = 8
+                 |         └─ 4 + 8 = 12
                  └─ 2 + 12 = 14
 ```
 
@@ -65,9 +65,9 @@ invertir("CAT")
 ├─ cabeza = 'C'
 └─ invertir("AT") + 'C'
               ├─ cabeza = 'A'
-              └─ invertir("T") + 'A'
-                        ├─ retorna "T" (caso base)
-                        └─ "T" + 'A' = "TA"
+              ├─ invertir("T") + 'A'
+              |          ├─ retorna "T" (caso base)
+              |          └─ "T" + 'A' = "TA"
               └─ "TA" + 'C' = "TAC"
 ```
 </td></tr>

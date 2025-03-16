@@ -42,12 +42,12 @@ Para implementar soluciones recursivas efectivas, se debe seguir una metodologí
 
 ## Implementaciones prácticas
 
-Los siguientes algoritmos recursivos clásicos se implementarán en Java en artefactos independientes:
+Los siguientes algoritmos recursivos clásicos se implementarán en Java en apartados independientes:
 
 1. **[Suma de números en un array](implementaciones/sumaNumerosArray.md)** - Implementación del algoritmo que suma los elementos de un array utilizando la técnica cabeza-cola.
 1. **[Inversión de cadenas de texto](implementaciones/inversionCadenas.md)** - Algoritmo recursivo para invertir una cadena de caracteres.
     - [*2Think*](implementaciones/ascensoVsDescenso.md)
-1. **Detección de palíndromos** - Verificación recursiva de si una cadena es palíndromo.
-1. **Torre de Hanoi** - Solución recursiva al clásico problema de la Torre de Hanoi.
+1. **[Detección de palíndromos](implementaciones/palindromos.md)** - Verificación recursiva de si una cadena es palíndromo.
+1. **[Torre de Hanoi](implementaciones/torresHanoi.md)** - Solución recursiva al clásico problema de la Torre de Hanoi.
 1. **Algoritmo de relleno por inundación (flood fill)** - Implementación del algoritmo utilizado en aplicaciones gráficas para rellenar áreas.
 1. **Función de Ackermann** - Ejemplo de función matemática altamente recursiva.

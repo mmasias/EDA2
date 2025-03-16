@@ -13,4 +13,5 @@
 - [El orden de los factores altera el producto](elOrden.md).
 - [Backtracking](backtracking.md).
 - [Análisis conceptual](analisisConceptual.md)
-- [Algunos (pocos) ejemplos clásicos & reales...](vademecum.md).
+
+> [Algunos (pocos) ejemplos clásicos & reales...](vademecum.md).
