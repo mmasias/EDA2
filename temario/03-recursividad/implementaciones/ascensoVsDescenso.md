@@ -27,12 +27,23 @@ Comprender estos patrones permite:
 
 ## ¿Cómo?
 
+<div align=center>
+
 <table>
 <tr><th>Procesamiento en descenso</th><th>Procesamiento en ascenso</th></tr>
-<tr><td>Suma recursiva</td><td>Inversión de cadenas</td></tr>
-<tr><td valign=top>
+<tr><td>
 
-Flujo de ejecución con [5, 2, 4, 8]:
+[Suma recursiva](sumaNumerosArray.md)
+</td><td>
+
+[Inversión de cadenas](inversionCadenas.md)
+</td></tr>
+<tr>
+    <td>Flujo de ejecución con [5, 2, 4, 8]</td>
+    <td>Flujo de ejecución con "CAT":</td>
+</tr>
+<tr><td valign=top>
+<small>
 
 ```
 sumar([5, 2, 4, 8])
@@ -52,8 +63,7 @@ sumar([5, 2, 4, 8])
 ```
 
 </td><td valign=top>
-
-Flujo de ejecución con "CAT":
+<small>
 
 ```
 invertir("CAT")
@@ -68,6 +78,8 @@ invertir("CAT")
 </td></tr>
 <tr><td><i>Temprano</i></td><td><i>Tardío</i></td></tr>
 </table>
+
+</div>
 
 ### Diferencias clave
 
