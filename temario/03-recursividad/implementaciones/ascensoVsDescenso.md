@@ -12,8 +12,8 @@ Existen dos patrones principales de procesamiento en algoritmos recursivos:
 
 |Procesamiento en descenso (head-first o descendente)|Procesamiento en ascenso (tail-first o ascendente)|
 |-|-|
-|La operación principal se realiza antes de conocer el resultado completo de la llamada recursiva. El procesamiento ocurre principalmente durante la fase de "descenso" de la recursión.|La operación principal se realiza después de obtener el resultado completo de la llamada recursiva. El procesamiento ocurre principalmente durante la fase de "ascenso" o retorno de la recursión.|
 |`operación(cabeza, recursión(cola))`|`operación(recursión(cola), cabeza)`|
+|La operación principal se realiza antes de conocer el resultado completo de la llamada recursiva. El procesamiento ocurre principalmente durante la fase de "descenso" de la recursión.|La operación principal se realiza después de obtener el resultado completo de la llamada recursiva. El procesamiento ocurre principalmente durante la fase de "ascenso" o retorno de la recursión.|
 
 ## ¿Para qué?
 
