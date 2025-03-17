@@ -31,54 +31,22 @@ La implementación recursiva de la suma de elementos proporciona:
 
 ## ¿Cómo?
 
-Para implementar la suma recursiva en Java, se debe seguir esta estructura:
-
-```java
-public class SumaRecursiva {
-    
-    public static int sumar(int[] numeros) {
-        // Caso base: Si el array está vacío, la suma es 0
-        if (numeros.length == 0) {
-            return 0;
-        } else {
-            // Caso recursivo:
-            // 1. Obtener la cabeza (el primer elemento)
-            int cabeza = numeros[0];
-            
-            // 2. Crear la cola (resto del array)
-            int[] cola = new int[numeros.length - 1];
-            System.arraycopy(numeros, 1, cola, 0, numeros.length - 1);
-            
-            // 3. Retornar la cabeza más la suma recursiva de la cola
-            return cabeza + sumar(cola);
-        }
-    }
-    
-    public static void main(String[] args) {
-        int[] ejemplo1 = {1, 2, 3, 4, 5};
-        System.out.println("La suma de {1, 2, 3, 4, 5} es: " + sumar(ejemplo1));
-        
-        int[] ejemplo2 = {5, 2, 4, 8};
-        System.out.println("La suma de {5, 2, 4, 8} es: " + sumar(ejemplo2));
-        
-        int[] ejemplo3 = {1, 10, 100, 1000};
-        System.out.println("La suma de {1, 10, 100, 1000} es: " + sumar(ejemplo3));
-    }
-}
-```
-
-### Análisis del algoritmo
+### Análisis del [algoritmo](/src/casosDeUso/recursividad/SumaRecursiva.java)
 
 #### Identificación del caso base y casos recursivos
 
 - **Caso base**: Un array vacío, cuya suma es 0.
 - **Caso recursivo**: Sumar el primer elemento (cabeza) con la suma recursiva del resto del array (cola).
 
-#### Convergencia:
+#### Convergencia
 
 El array se reduce en un elemento en cada llamada recursiva, garantizando que eventualmente se alcance el caso base (array vacío).
 
 #### Funcionamiento de la pila de llamadas
+
+<table>
+<tr>
+<td valign=top>
 
 Para el array `[5, 2, 4, 8]`, la pila de llamadas evoluciona así:
 
@@ -88,6 +56,17 @@ Para el array `[5, 2, 4, 8]`, la pila de llamadas evoluciona así:
 1. `sumar([8])` → cabeza=8, cola=[]
 1. `sumar([])` → retorna 0 (caso base)
 1. Retroceso: 0+8=8, 8+4=12, 12+2=14, 14+5=19
+</td>
+<td>
+
+<div align=center>
+
+![](/images/modelosUML/sumaNumerosArray.svg)
+
+</div>
+</td>
+</tr>
+</table>
 
 ### Consideraciones de eficiencia
 
