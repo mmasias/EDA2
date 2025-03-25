@@ -4,7 +4,7 @@
 - [Suma de un rango de enteros (sin bucles)](/src/casosDeUso/recursividad/SumRange.java)
 - [Búsqueda binaria](/src/casosDeUso/recursividad/BinarySearchExample.java).
 - [Las 9 reinas](/src/casosDeUso/recursividad/Queens.java)
-- [Torres de hanoi](/src/casosDeUso/recursividad/Hanoi.java) / Explorado en el articulo [Torre de Hanoi](../03-recursividad/implementaciones/TorreDeHanoi.md)
+- [Torres de hanoi](/src/casosDeUso/recursividad/Hanoi.java) / Explorado en el articulo [Torre de Hanoi](implementaciones/torreDeHanoi.md)
 
 ## Código de producción
 

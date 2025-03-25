@@ -35,23 +35,33 @@ public class Queens {
         }
 
         for (int i = 0; i < queensQuantity; i++) {
-            traza("Intentando colocarla en (" + col + ", " + i + ") / ");
+            
+            traza((col+1) + "º reina Intentando colocarla en (" + col + ", " + i + ") / ");
             if (canPutQueen(board, i, col)) {
-                board[i][col] = 1; 
-                traza("Colocandola en (" + col + ", " + i + "):");
+                putQueen(board, col, i); 
+                traza((col+1) + "º reina Colocandola en (" + col + ", " + i + "):");
                 printBoard(board);
 
-                if (solveNQUtil(board, col + 1))
+                if (solveNQUtil(board, col + 1)) {
                     return true;
+                }
 
-                board[i][col] = 0;
-                traza("¡Vuelta atrás! Quito la reina de (" + col + ", " + i + "):");
+                removeQueen(board, col, i);
+                traza("¡Vuelta atrás! Quito la " + (col+1) + "º reina de (" + col + ", " + i + "):");
                 printBoard(board);  
             } else {
-                traza("No se puede colocar en (" + col + ", " + i + ") - Paso a la siguiente fila");
+                traza((col+1) + "º reina no se puede colocar en (" + col + ", " + i + ") - Paso a la siguiente fila");
             }
         }
         return false;  
+    }
+
+    private void removeQueen(int[][] board, int col, int i) {
+        board[i][col] = 0;
+    }
+
+    private void putQueen(int[][] board, int col, int i) {
+        board[i][col] = 1;
     }
 
     boolean solveNQ() {
