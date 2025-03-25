@@ -8,8 +8,6 @@ Los enfoques tradicionales para recorrer matrices bidimensionales suelen utiliza
 
 Este algoritmo representa, además, un caso de uso donde la recursión opera sobre estructuras de datos multidimensionales, ampliando el concepto más allá de las estructuras lineales o jerárquicas vistas en ejemplos anteriores.
 
-> [*Ejemplo*](https://x.com/PixelArtSierra/status/1801585376307646545/photo/1)
-
 ## ¿Qué?
 
 El algoritmo de relleno por inundación consiste en cambiar el color (o valor) de un área conectada en una imagen o matriz bidimensional. Comenzando desde un punto inicial, el algoritmo examina los píxeles o celdas adyacentes y, si tienen el mismo color original, cambia su valor al nuevo color especificado. Este proceso se propaga en cuatro direcciones cardinales (arriba, abajo, izquierda, derecha) hasta que toda el área conectada ha sido rellenada.
@@ -110,4 +108,13 @@ Para evitar el desbordamiento de pila en imágenes grandes, se puede implementar
 
 ## A partir de aquí
 
+> [*Ejemplo*](https://x.com/PixelArtSierra/status/1801585376307646545/photo/1)
+
 Jugar con ideas usando [imagenes](http://www.sierrawallpaper.com/games/kq1agi/) y [ASCII](https://www.asciiart.eu/image-to-ascii)
+
+<div align=center>
+
+|![image](https://github.com/user-attachments/assets/8ee57bcd-9020-4ff6-8496-86b16ea4d7a1)|![image](https://github.com/user-attachments/assets/6229e4df-3a02-464d-ae04-1868824d0517)|
+|-|-|
+
+</div>
