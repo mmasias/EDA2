@@ -6,16 +6,16 @@ public class RellenoInundacion {
     final static boolean MODO_DEBUG = false;
 
     public static void main(String[] args) {
-        
+
         char[][] imagen = crearImagenEjemplo(PLANTILLA_001);
 
         imprimirImagen(imagen);
         System.out.println("Imagen original -- Pulse una tecla para empezar a pintarla");
         new Scanner(System.in).nextLine();
 
-        rellenarRecursivo(imagen, 2, 2, 'x', '\0');
+        rellenarRecursivo(imagen, 0, 0, 'x', '\0');
         imprimirImagen(imagen);
-        System.out.println("Imagen después del relleno por inundación habiendo empezado en (4,4)");
+        System.out.println("Imagen después del relleno por inundación habiendo empezado en (0,0)");
 
         // imagen = crearImagenEjemplo();
         // rellenarIterativo(imagen, 2, 2, '*');
@@ -173,8 +173,10 @@ public class RellenoInundacion {
             int actualX = coordenada[0];
             int actualY = coordenada[1];
 
-            imprimirImagen(imagen);
-            // new Scanner(System.in).nextLine();
+            if (MODO_DEBUG) {
+                imprimirImagen(imagen);
+                new Scanner(System.in).nextLine();
+            }
 
             if (actualY < 0
                     || actualY >= imagen.length
