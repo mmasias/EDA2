@@ -108,7 +108,7 @@ Para evitar el desbordamiento de pila en imágenes grandes, se puede implementar
 
 ## A partir de aquí
 
-> [*Ejemplo*](https://x.com/PixelArtSierra/status/1801585376307646545/photo/1)
+> [*Ejemplo*](https://www.youtube.com/@PixelArtSierra)
 
 Jugar con ideas usando [imagenes](http://www.sierrawallpaper.com/games/kq1agi/) y [ASCII](https://www.asciiart.eu/image-to-ascii)
 
