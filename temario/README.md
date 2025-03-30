@@ -3,7 +3,7 @@
 - [x] [Estructuras de datos](01-estructurasDeDatos/README.md)
 - [x] [Algoritmos](02-algoritmos/README.md)
 - [x] [Recursividad](03-recursividad/README.md)
-- [ ] Ordenación
+- [x] [Ordenación](04-ordenacion/README.md)
 - [ ] Búsquedas
 - [ ] Hashing
 
