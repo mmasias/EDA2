@@ -4,6 +4,7 @@
 - [x] [Algoritmos](02-algoritmos/README.md)
 - [x] [Recursividad](03-recursividad/README.md)
 - [x] [Ordenación](04-ordenacion/README.md)
+- [x] [Inmutabilidad *et al*](05-inmutabilidad/README.md)
 - [ ] Búsquedas
 - [ ] Hashing
 
