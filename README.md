@@ -8,3 +8,5 @@ Repo de materiales de la asignatura **Estructuras de datos y algoritmos II** del
 - [Algoritmos++](/temario/02-algoritmos/README.md)
 - [Recursividad](/temario/03-recursividad/README.md)
 - [Ordenación](/temario/04-ordenacion/README.md)
+- [Inmutabilidad](/temario/05-inmutabilidad/README.md)
+- [Hashing](/temario/06-hashing/README.md)
