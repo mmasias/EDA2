@@ -1,3 +1,5 @@
+package casosDeUso.inmutabilidad.e010;
+
 class Person {
     private final String name;
     private final String lastName;

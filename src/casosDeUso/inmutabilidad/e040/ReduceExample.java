@@ -6,35 +6,6 @@ import java.util.Optional;
 
 public class ReduceExample {
     public static void main(String[] args) {
-        // Lista de números
-        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
-
-        // Suma utilizando reduce
-        int sum = numbers.stream()
-                .reduce(0, (accumulated, current) -> accumulated + current);
-
-        System.out.println("Suma: " + sum);
-
-        // Multiplicación utilizando reduce
-        int product = numbers.stream()
-                .reduce(1, (accumulated, current) -> accumulated * current);
-
-        System.out.println("Producto: " + product);
-
-        // Máximo utilizando reduce
-        Optional<Integer> max = numbers.stream()
-                .reduce((a, b) -> a > b ? a : b);
-
-        max.ifPresent(value -> System.out.println("Máximo: " + value));
-
-        // Concatenación de strings
-        List<String> words = Arrays.asList("Programación", "funcional", "con", "Java");
-
-        String sentence = words.stream()
-                .reduce("", (partial, word) -> partial + " " + word)
-                .trim();
-
-        System.out.println("Frase: " + sentence);
 
         // Ejemplo con objetos complejos - calcular total de ventas
         List<Order> orders = Arrays.asList(

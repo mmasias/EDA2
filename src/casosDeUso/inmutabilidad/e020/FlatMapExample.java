@@ -4,36 +4,7 @@ import java.util.stream.Collectors;
 
 public class FlatMapExample {
     public static void main(String[] args) {
-        // Lista de frases
-        List<String> phrases = Arrays.asList(
-                "Hola mundo", 
-                "Programación funcional", 
-                "Java Stream API"
-        );
-        
-        // Obtener todas las palabras únicas
-        List<String> allWords = phrases.stream()
-                .flatMap(phrase -> Arrays.stream(phrase.toLowerCase().split(" ")))
-                .distinct()
-                .sorted()
-                .collect(Collectors.toList());
-        
-        System.out.println("Palabras únicas: " + allWords);
-        
-        // Ejemplo con estructuras anidadas
-        List<List<Integer>> numberLists = Arrays.asList(
-                Arrays.asList(1, 2, 3),
-                Arrays.asList(4, 5),
-                Arrays.asList(6, 7, 8, 9)
-        );
-        
-        // Aplanar en una única lista
-        List<Integer> allNumbers = numberLists.stream()
-                .flatMap(List::stream)
-                .collect(Collectors.toList());
-        
-        System.out.println("Todos los números: " + allNumbers);
-        
+       
         // Ejemplo con objetos complejos
         List<Department> departments = Arrays.asList(
                 new Department("Ingeniería", Arrays.asList(

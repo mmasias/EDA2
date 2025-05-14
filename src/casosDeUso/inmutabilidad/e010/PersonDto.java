@@ -1,3 +1,5 @@
+package casosDeUso.inmutabilidad.e010;
+
 class PersonDto {
     private final String fullName;
     private final int age;

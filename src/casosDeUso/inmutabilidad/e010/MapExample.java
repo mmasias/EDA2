@@ -1,3 +1,5 @@
+package casosDeUso.inmutabilidad.e010;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -45,5 +47,6 @@ public class MapExample {
 
                 personDtos.forEach(
                                 dto -> System.out.println("DTO: " + dto.getFullName() + ", " + dto.getAge() + " años"));
+
         }
 }
