@@ -28,8 +28,8 @@ Entrevistas técnicas|Las búsquedas son un tema clave en las entrevistas, ya qu
 |Algoritmo||Características|
 |-|-|-|
 |**[Búsqueda lineal](linearSearch.md)**|Recorre la colección elemento por elemento hasta encontrar el objetivo.|- Simple de implementar<br>- Ineficiente para colecciones grandes<br>- Funciona en listas desordenadas|
-|**[Búsqueda binaria](binarySearch.md)**|Divide una lista ordenada a la mitad repetidamente para localizar el elemento.|- Muy eficiente para listas ordenadas<br>- No funciona con listas desordenadas<br>- Complejidad temporal: \(O(\log n)\)|
-|**[Búsqueda en árbol](treeSearch.md)**|Recurre a estructuras de árbol para buscar elementos, como árboles binarios de búsqueda (BST) o árboles balanceados.|- Eficiente si el árbol está balanceado<br>- Complejidad temporal: \(O(\log n)\)<br>- Puede ser ineficiente con árboles desbalanceados|
+|**[Búsqueda binaria](binarySearch.md)**|Divide una lista ordenada a la mitad repetidamente para localizar el elemento.|- Muy eficiente para listas ordenadas<br>- No funciona con listas desordenadas<br>- Complejidad temporal: (O(log n))|
+|**[Búsqueda en árbol](treeSearch.md)**|Recurre a estructuras de árbol para buscar elementos, como árboles binarios de búsqueda (BST) o árboles balanceados.|- Eficiente si el árbol está balanceado<br>- Complejidad temporal: (O(log n))<br>- Puede ser ineficiente con árboles desbalanceados|
 
 <!--
 |**[Búsqueda en grafos](graphSearch.md)**|Explora un grafo para localizar nodos específicos usando algoritmos como BFS (Breadth-First Search) o DFS (Depth-First Search).|- Permite encontrar caminos o rutas entre nodos<br>- Adaptable para diferentes tipos de grafos<br>- Puede ser costoso en términos de memoria|
