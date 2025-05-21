@@ -6,8 +6,4 @@
 - [x] [Ordenación](04-ordenacion/README.md)
 - [x] [Inmutabilidad *et al*](05-inmutabilidad/README.md)
 - [x] [Hashing](06-hashing/README.md)
-- [ ] Búsquedas
-
-## Temario++
-
-- [ ] Artículos varios recopilados en la [carpeta de documentos](/documentos/README.md).
+- [x] [Búsquedas](07-busquedas/README.md)
