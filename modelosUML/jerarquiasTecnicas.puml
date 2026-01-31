@@ -2,55 +2,52 @@
 
 hide empty members
 hide circle
+skinparam linetype polyline
 
-class M_I {
-            **Patrón dominante**
-            ----
-            • Bucles con índices
-            • Modificación in-situ
-            • Arrays mutables
-            ----
-            Ejemplo:
-            Burbuja, Inserción, Heapsort    
+class M_I <<Iterativo + Mutable>> {
+    **Patrón dominante**
+    ----
+    • Bucles con índices
+    • Modificación in-situ
+    • Arrays mutables
+    ----
+    Ejemplo:
+    Burbuja, Inserción, Heapsort    
 }
-class M_R {
-            **Patrón híbrido**
-            ----
-            • Recursión con efectos
-            • Modificación durante el retroceso
-            ----
-            Ejemplo:
-            Quicksort in-place    
-}
-class I_I {
-            **Patrón funcional**
-            ----
-            • Bucles con acumulador
-            • Copia en cada paso
-            • Estructuras persistentes
-            ----
-            Ejemplo: fold/reduce
-            sobre listas inmutables
-        }
-class I_R {
-            **Patrón puramente funcional**
-            ----
-            • Recursión sin efectos
-            • Nuevas estructuras
-              en cada llamada
-            ----
-            Ejemplo: Mergesort
-            funcional, map/filter
-        }
 
-together {
-    class "Algoritmo general" as General {
-        Entrada → Transformación → Salida
-        ---
-        Restricciones:
-        · Composición de llamadas
-        · Mutabilidad del estado
-    }
+class M_R <<Recursivo + Mutable>> {
+    **Patrón híbrido**
+    ----
+    • Recursión con efectos
+    • Modificación durante el retroceso
+    ----
+    Ejemplo:
+    Quicksort in-place    
+}
+
+class I_I <<Iterativo + Inmutable>> {
+    **Patrón funcional**
+    ----
+    • Bucles con acumulador
+    • Copia en cada paso
+    • Estructuras persistentes
+    ----
+    Ejemplo: fold/reduce
+    sobre listas inmutables
+}
+
+class I_R <<Recursivo + Inmutable>> {
+    **Patrón puramente funcional**
+    ----
+    • Recursión sin efectos
+    • Nuevas estructuras en cada llamada
+    ----
+    Ejemplo: Mergesort funcional,
+    map/filter
+}
+
+class "Algoritmo general" as General {
+    Entrada → Transformación → Salida
 }
 
 class "Iterativo" as Iter {
@@ -73,42 +70,21 @@ class "Inmutable" as Inmut {
     Razonamiento composicional
 }
 
-Iter <-r- General : ¿Cómo se gestiona
-Rec <-l- General: el flujo de control?
+General -right-> Iter : "¿Cómo se gestiona\nel flujo?"
+General -left-> Rec : "¿Cómo se gestiona\nel flujo?"
+General -up-> Mut : "¿Cómo se gestiona\nel estado?"
+General -down-> Inmut : "¿Cómo se gestiona\nel estado?"
 
-General -u-> Mut : ¿Cómo se gestiona
-General -d-> Inmut: el estado?
+Iter -up-> M_I
+Mut -right-> M_I
 
-M_I -d- Iter
-M_I -r- Mut
+Rec -up-> M_R
+Mut -left-> M_R
 
-M_R -l- Mut
-M_R -d- Rec
+Iter -down-> I_I
+Inmut -right-> I_I
 
-I_I -u- Iter
-I_I -r- Inmut
-
-I_R -u- Rec
-I_R -l- Inmut
-
-
-' note right of RestComp
-'     Dimensión 1:
-'     ¿Cómo se gestiona
-'     el flujo de control?
-' end note
-'
-' note right of RestMut
-'     Dimensión 2:
-'     ¿Cómo se gestiona
-'     el estado?
-' end note
-'
-' note bottom of General
-'     Estas dimensiones son ortogonales:
-'     genera 4 combinaciones posibles
-'     (Iterativo-Mutable, Iterativo-Inmutable,
-'     Recursivo-Mutable, Recursivo-Inmutable)
-' end note
+Rec -down-> I_R
+Inmut -left-> I_R
 
 @enduml
