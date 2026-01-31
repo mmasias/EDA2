@@ -18,22 +18,27 @@ La algorítmica es la disciplina que estudia los métodos para resolver problema
 |Cómo hacer que la máquina haga X|Se puede modelar cualquier cosa|No todo objeto es igual: algunos son más eficientes para ciertos usos|Ahora que conocemos las herramientas, usémoslas con eficiencia
 |Variables, control de flujo, funciones|Abstracción mediante objetos|Las abstracciones tienen coste|Dada la estructura correcta, ¿cómo la uso óptimamente?
 |Pensamiento secuencial|Encapsulación, herencia, polimorfismo|Cada estructura garantiza propiedades específicas|Ordenar, buscar, transformar con garantías de complejidad
-||Libertad de diseño|Elección deliberada: pila vs. cola vs. árbol|
+||Libertad de diseño|Elección/restricción deliberada: pila vs. cola vs. árbol|
 
 </div>
 
 <div align=center>
 
-![](/images/modelosUML/jerarquiaTecnicas.svg)
+|![](/images/modelosUML/jerarquiaTecnicas.svg)
+|-:
+|<sub>[Código fuente](modelosUML/jerarquiasTecnicas.puml)</sub>
 
 </div>
 
 ## ¿Para qué?
 
-- **Capacidad de análisis:** Evaluar si un algoritmo es viable para el problema en cuestión. Distinguir entre algo aceptable para 100 elementos vs. inviable para 1.000.000.
-- **Selección informada:** Elegir la técnica correcta según el contexto.
-- **Optimización justificada:** Identificar cuándo vale la pena optimizar. No todo código necesita ser optimizado: algunos problemas se resuelven adecuadamente con soluciones simples.
-- **Fundamento para especialización:** Base conceptual para cursos avanzados (programación funcional, programación dinámica, teoría de grafos, machine learning) donde la eficiencia algorítmica es crítica.
+<div align=center>
+
+|Capacidad de análisis|Selección informada|Optimización justificada|Fundamento para especialización|
+|-|-|-|-|
+Evaluar si un algoritmo es viable para el problema en cuestión. Distinguir entre algo aceptable para 100 elementos vs. inviable para 1.000.000.|Elegir la técnica correcta según el contexto.|Identificar cuándo vale la pena optimizar. No todo código necesita ser optimizado: algunos problemas se resuelven adecuadamente con soluciones simples.|Base conceptual para cursos avanzados (programación funcional, programación dinámica, teoría de grafos, machine learning) donde la eficiencia algorítmica es crítica.
+
+</div>
 
 ## ¿Cómo?
 
