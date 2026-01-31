@@ -2,9 +2,15 @@
 
 ## ¿Por qué?
 
-Habiendo aprendido los fundamentos de la programación imperativa, estructurada y orientada a objetos (PRG1, PRG2); y luego de ver la manera de organizar la información en estructuras de datos eficientes (EDA1), **es pertinente abordar el siguiente paso: aprender a operar sobre esas estructuras de manera eficiente**.
+<div align=right>
 
-No basta con que un programa funcione correctamente; es necesario que lo haga aprovechando óptimamente los recursos disponibles. Un algoritmo que resuelve un problema para cientos de elementos puede volverse inusable cuando la entrada crece a millones.
+*Una vez que uno ha aprendido a construir (PRG\*)  y a organizar (EDA1), toca empezar a optimizar (EDA2).*
+
+</div>
+
+Habiendo visto los fundamentos de la programación imperativa, estructurada y orientada a objetos (PRG1, PRG2); y luego de ver la manera de organizar la información en estructuras de datos eficientes (EDA1), **es pertinente abordar el siguiente paso: aprender a operar sobre esas estructuras de manera eficiente**.
+
+No basta con que un programa funcione correctamente: es necesario que lo haga aprovechando óptimamente los recursos disponibles. Un algoritmo que resuelve un problema para cientos de elementos puede volverse inusable cuando la entrada crece a millones.
 
 ## ¿Qué?
 
@@ -44,10 +50,14 @@ Evaluar si un algoritmo es viable para el problema en cuestión. Distinguir entr
 
 ### [Temario](/temario/README.md)
 
-- [ ] [Algoritmos++](temario/001-algoritmosPlus/README.md)
-- [ ] [Recursividad](temario/002-recursividad/README.md)
-- [ ] [Ordenación](temario/003-ordenacion/README.md)
-- [ ] [Inmutabilidad](temario/004-inmutabilidad/README.md)
-- [ ] [Hashing](temario/005-hashing/README.md)
-- [ ] [Búsquedas](temario/006-busquedas/README.md)
-- [ ] [Estructuras de datos++](temario/007-estructurasDatosPlus/README.md)
+- Bloque instrumental: las herramientas
+  - [ ] [Análisis de algoritmos](temario/001-analisisAlgoritmos/README.md)
+  - [ ] [Recursividad](temario/002-recursividad/README.md)
+- Bloque de organización
+  - [ ] [Ordenación](temario/003-ordenacion/README.md)
+- Bloque de recuperación
+  - [ ] [Búsquedas](temario/004-busquedas/README.md)
+  - [ ] [Hashing](temario/005-hashing/README.md)
+- Abstracción avanzada
+  - [ ] [Estructuras de datos avanzadas](temario/006-estructurasDatosAvanzadas/README.md)
+  - [ ] [Inmutabilidad](temario/007-inmutabilidad/README.md)
