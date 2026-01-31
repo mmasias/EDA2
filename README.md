@@ -4,7 +4,7 @@
 
 <div align=right>
 
-*Una vez que uno ha aprendido a construir (PRG\*)  y a organizar (EDA1), toca empezar a optimizar (EDA2).*
+*Una vez que uno ha aprendido a construir [PRG\*]  y a organizar [EDA1], toca empezar a optimizar [EDA2].*
 
 </div>
 
