@@ -2,70 +2,86 @@
 
 hide empty members
 hide circle
-skinparam linetype polyline
+hide stereotypes
 
-class M_I <<Iterativo + Mutable>> {
-    **Patrón dominante**
-    ----
-    • Bucles con índices
-    • Modificación in-situ
-    • Arrays mutables
-    ----
-    Ejemplo:
-    Burbuja, Inserción, Heapsort    
+skinparam class {
+    FontSize 12
 }
 
-class M_R <<Recursivo + Mutable>> {
-    **Patrón híbrido**
-    ----
-    • Recursión con efectos
-    • Modificación durante el retroceso
-    ----
-    Ejemplo:
-    Quicksort in-place    
+skinparam class<<cuadrante>> {
+    BorderThickness 1
 }
 
-class I_I <<Iterativo + Inmutable>> {
-    **Patrón funcional**
-    ----
-    • Bucles con acumulador
-    • Copia en cada paso
-    • Estructuras persistentes
-    ----
-    Ejemplo: fold/reduce
-    sobre listas inmutables
+skinparam class<<eje>> {
+    BorderThickness 2
 }
 
-class I_R <<Recursivo + Inmutable>> {
-    **Patrón puramente funcional**
-    ----
-    • Recursión sin efectos
-    • Nuevas estructuras en cada llamada
-    ----
-    Ejemplo: Mergesort funcional,
-    map/filter
+skinparam class<<nucleo>> {
+    BorderThickness 3
 }
 
-class "Algoritmo general" as General {
-    Entrada → Transformación → Salida
+class M_I as "**Patrón dominante**" <<cuadrante>> {
+    <size:11>Iterativo + Mutable
+    ----
+    <size:10>• Bucles con índices
+    <size:10>• Modificación in-situ
+    <size:10>• Arrays mutables
+    ----
+    <size:10>Ejemplo:
+    <size:10>Burbuja, Inserción, Heapsort
 }
 
-class "Iterativo" as Iter {
+class M_R as "**Patrón híbrido**" <<cuadrante>> {
+    <size:11>Recursivo + Mutable
+    ----
+    <size:10>• Recursión con efectos
+    <size:10>• Modificación durante el retroceso
+    ----
+    <size:10>Ejemplo:
+    <size:10>Quicksort in-place
+}
+
+class I_I as "**Patrón funcional**" <<cuadrante>> {
+    <size:11>Iterativo + Inmutable
+    ----
+    <size:10>• Bucles con acumulador
+    <size:10>• Copia en cada paso
+    <size:10>• Estructuras persistentes
+    ----
+    <size:10>Ejemplo: fold/reduce
+    <size:10>sobre listas inmutables
+}
+
+class I_R as "**Patrón puramente funcional**" <<cuadrante>> {
+    <size:11>Recursivo + Inmutable
+    ----
+    <size:10>• Recursión sin efectos
+    <size:10>• Nuevas estructuras en cada llamada
+    ----
+    <size:10>Ejemplo: Mergesort funcional,
+    <size:10>map/filter
+}
+
+class "Algoritmo general" as General <<nucleo>> {
+    <size:13>Entrada → Transformación → Salida
+}
+
+class "Iterativo" as Iter <<eje>> {
     Estado explícito
     Flujo secuencial
 }
 
-class "Recursivo" as Rec {
+class "Recursivo" as Rec <<eje>> {
     Estado implícito en pila
     Flujo compositivo
 }
 
-class "Mutable" as Mut {    
+class "Mutable" as Mut <<eje>> {    
     Modificación directa
     Eficiencia espacial
 }
 
-class "Inmutable" as Inmut {
+class "Inmutable" as Inmut <<eje>> {
     Transformaciones puras
     Razonamiento composicional
 }
