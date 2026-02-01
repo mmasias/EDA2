@@ -15,7 +15,7 @@
 
 ## Bloque de recuperación
 
-*Una vez que podemos organizar la información, necesitamos recuperarla de manera eficiente. ¿Qué ventajas me da el ordenar antes de buscar? Si no quiero (o no puedo) ordenar, ¿puedo ser eficiente en las búsquedas? ¿Siempre hay que comparar para buscar?*
+*Una vez que podemos organizar la información, necesitamos recuperarla de manera eficiente. ¿Qué ventajas me da el ordenar antes de buscar? Si no quiero (o no puedo) ordenar, ¿puedo ser eficiente en las búsquedas? ¿Puedo encontrar algo sin compararlo con otros elementos?*
 
 - [ ] [Búsquedas](004-busquedas/README.md)
 - [ ] [Hashing](005-hashing/README.md)
