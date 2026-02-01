@@ -1,12 +1,12 @@
 # Estructuras de datos y algoritmos II
 
-## ¿Por qué?
-
 <div align=right>
 
-*Una vez que uno ha aprendido a construir [PRG\*]  y a organizar [EDA1], toca empezar a optimizar [EDA2].*
+*Construir (PRG1/PRG2) → organizar (EDA1) → optimizar (EDA2).*
 
 </div>
+
+## ¿Por qué?
 
 Habiendo visto los fundamentos de la programación imperativa, estructurada y orientada a objetos (PRG1, PRG2); y luego de ver la manera de organizar la información en estructuras de datos eficientes (EDA1), **es pertinente abordar el siguiente paso: aprender a operar sobre esas estructuras de manera eficiente**.
 
@@ -43,6 +43,13 @@ La algorítmica es la disciplina que estudia los métodos para resolver problema
 |Capacidad de análisis|Selección informada|Optimización justificada|Fundamento para especialización|
 |-|-|-|-|
 Evaluar si un algoritmo es viable para el problema en cuestión. Distinguir entre algo aceptable para 100 elementos vs. inviable para 1.000.000.|Elegir la técnica correcta según el contexto.|Identificar cuándo vale la pena optimizar. No todo código necesita ser optimizado: algunos problemas se resuelven adecuadamente con soluciones simples.|Base conceptual para cursos avanzados (programación funcional, programación dinámica, teoría de grafos, machine learning) donde la eficiencia algorítmica es crítica.
+
+</div>
+
+<div align=right>
+
+<sub>*EDA2 busca la concientización algorítmica: dar el salto de los patrones operativos —identificados e implementados en asignaturas anteriores—<br>a **soluciones algorítmicas formales**, valorables en términos de complejidad, eficiencia y garantías de rendimiento.*
+</sub>
 
 </div>
 
