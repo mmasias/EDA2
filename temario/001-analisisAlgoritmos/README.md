@@ -139,4 +139,6 @@ A continuación se presentan ejemplos en código Java para cada categoría de co
 
 </div>
 
-> **Perspectiva**: Sobre la tensión entre teoría académica y práctica profesional, ver [Compromiso teoría/práctica](articulos/realidad.md).
+## Dicho esto
+
+**Perspectiva**: Sobre la tensión entre teoría académica y práctica profesional, ver [Compromiso teoría/práctica](articulos/realidad.md).
