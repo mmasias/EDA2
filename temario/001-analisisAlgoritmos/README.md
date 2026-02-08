@@ -24,10 +24,10 @@ Se hace necesario pues:
 
 El análisis de complejidad nos permite abordar decisiones de diseño donde no existe solución perfecta:
 
-- **Tiempo vs. Espacio**: Usar más memoria permite ganar velocidad. Hashing ofrece O(1) a costa de espacio adicional; algoritmos in-place ahorran memoria pero pueden ser más lentos.
-- **Legibilidad vs. Micro-optimización**: No todo código requiere optimización extrema. Una solución O(n²) puede ser perfectamente adecuada para datos que nunca excederán los 100 elementos. La legibilidad y mantenibilidad tienen valor.
+- **Tiempo vs. Espacio**: Usar más memoria permite ganar velocidad. Hashing ofrece velocidad a cambio de uso de espacio adicional; algoritmos in-place ahorran memoria pero pueden ser más lentos.
+- **Legibilidad vs. Micro-optimización**: No todo código requiere optimización extrema. Una solución "lenta" puede ser perfectamente adecuada para datos que nunca excederán los 100 elementos. La legibilidad y mantenibilidad tienen valor.
 
-Saber cuándo optimizar es tan importante como saber cómo hacerlo.
+> *Saber cuándo optimizar es tan importante como saber cómo hacerlo.*
 
 ## Cómo?
 
