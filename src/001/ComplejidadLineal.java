@@ -1,4 +1,5 @@
 class ComplejidadLineal {
+    static final int NO_ENCONTRADO = -1;
 
     public static void main(String[] args) {
         int[] libro = new int[100];
@@ -30,7 +31,7 @@ class ComplejidadLineal {
                 return i;
             }
         }
-        return -1;
+        return NO_ENCONTRADO;
     }
 
     static int contarFila(int[] personas) {
