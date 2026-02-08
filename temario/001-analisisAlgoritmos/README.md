@@ -6,6 +6,10 @@ Los algoritmos son procedimientos o fórmulas para resolver problemas. Pueden se
 
 Habiendo aprendido a construir programas que funcionan correctamente, es pertinente abordar la siguiente pregunta: ***¿qué tan bien funcionan?*** Un algoritmo que resuelve un problema para cientos de elementos puede volverse inusable cuando la entrada crece a millones.
 
+> **Intuición**: Para entender por qué la organización de los datos importa, ver [¿por qué importa cómo organizamos los datos?](articulos/organizacionImporta.md).
+
+> **Perspectiva**: Sobre la tensión entre teoría académica y práctica profesional, ver [Compromiso teoría/práctica](articulos/realidad.md).
+
 ## ¿Qué?
 
 El análisis de algoritmos es la disciplina que estudia cómo medir y comparar el rendimiento de las soluciones computacionales. Proporciona un marco teórico —la notación asintótica— y herramientas prácticas para evaluar la eficiencia de manera independiente del hardware, permitiendo así tomar decisiones fundamentadas sobre qué algoritmo usar para un problema dado.
@@ -103,6 +107,8 @@ El análisis de complejidad se realiza contando operaciones elementales en funci
 - **Sentencias secuenciales**: Las complejidades se suman. Si una parte hace O(n) y otra O(log n), el total es O(n + log n) = O(n).
 - **Bucles independientes**: Las complejidades se multiplican. Un bucle externo O(n) que contiene un bucle interno O(n) resulta en O(n × n) = O(n²).
 - **Bucles dependientes**: Cuando el bucle interno depende del índice del externo (ej: `for i in 0..n; for j in 0..i`), se utiliza sumatorias. Este caso genera la serie aritmética 1 + 2 + 3 + ... + n = n(n+1)/2 = O(n²).
+
+> **Profundización**: Para un análisis detallado con ejemplos prácticos, simplificación de fórmulas y comparación de algoritmos iterativos, ver [Análisis de algoritmos iterativos](articulos/analisis-iterativos.md).
 
 **Análisis de algoritmos recursivos**
 
