@@ -1,55 +1,32 @@
-# Ejemplo B: Búsqueda binaria
+# Ejemplo B: Encontrar el máximo
 
 ## Código
 
 ```java
-class BinarySearch {
-    static final int NOT_FOUND = -1;
-
-    static int binarySearch(int[] array, int target) {
-        int left = 0;
-        int right = array.length - 1;
-
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-
-            if (array[mid] == target) {
-                return mid;
-            }
-            if (array[mid] < target) {
-                left = mid + 1;
-            } else {
-                right = mid - 1;
-            }
-        }
-        return NOT_FOUND;
-    }
-
-    public static void main(String[] args) {
-        int[] array = {1, 3, 5, 7, 9, 11};
-        int target = 7;
-        int result = binarySearch(array, target);
-        if (result == NOT_FOUND) {
-            System.out.println("Elemento no encontrado en el arreglo.");
-        } else {
-            System.out.println("Elemento encontrado en el índice: " + result);
+static int findMax(int[] array) {
+    int max = array[0];
+    for (int i = 1; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
         }
     }
+    return max;
 }
 ```
 
-## Análisis del algoritmo de búsqueda binaria
+## Análisis del algoritmo findMax
 
 ### Identificación de las operaciones y su complejidad
 
 <div align=center>
 
-|Componente|Descripción|Complejidad|
+|Operación|Descripción|Complejidad|
 |-|-|-|
-|Inicialización|Las operaciones (`left = 0`, `right = array.length - 1`) son constantes|`O(1)`|
-|Bucle `while`|Reduce el tamaño del problema a la mitad en cada iteración. El número de iteraciones es proporcional a log N|`O(log N)`|
-|Operaciones dentro del bucle|Calcular el medio, comparar y actualizar límites son operaciones constantes|`O(1)` por operación, implicado en `O(log N)`|
-|Retorno|El retorno del índice o de NOT_FOUND (-1) es una operación constante|`O(1)`|
+|Inicialización del máximo|Incluir acceder al primer elemento y asignarlo a max. Se realiza una sola vez|`O(1)`|
+|Bucle `for`|Se ejecuta `n-1` veces, donde n es el tamaño del arreglo|`O(N)`|
+|Comparación dentro del bucle|La comparación `array[i] > max` se realiza una vez por iteración|`O(1)` por operación, pero `O(N)` al estar dentro del bucle|
+|Asignación dentro del bucle|En el peor caso se realizará en cada iteración|`O(1)` por operación, pero `O(N)` en el peor caso|
+|Retorno del máximo|Operación que se realiza una sola vez|`O(1)`|
 
 </div>
 
@@ -57,10 +34,16 @@ class BinarySearch {
 
 <div align=center>
 
-`O(1) + O(log N) + O(1) --> O(log N) + 2O(1)`
+`O(1) + O(N) + O(N) + O(N) + O(1) --> 2·O(1) + 3·O(N)`
 
 </div>
 
 ### Simplificación
 
-Al simplificar y enfocarnos en el término de mayor crecimiento, las constantes y los términos de menor crecimiento son considerados insignificantes frente al término dominante. Por lo tanto, el resultado final se simplifica a **O(log N)**, reflejando la eficiencia de la búsqueda binaria en conjuntos de datos ordenados.
+En el análisis de complejidad asintótica, nos enfocamos en el comportamiento para grandes valores de N:
+
+1. Las constantes (3 en 3·O(N)) se eliminan
+2. Los términos de menor orden (O(1)) se vuelven insignificantes
+3. Nos quedamos con el término de mayor crecimiento
+
+Por lo tanto, la complejidad del algoritmo se simplifica a **O(N)**, lo cual es intuitivamente correcto ya que necesitamos examinar cada elemento del arreglo exactamente una vez para encontrar el máximo.

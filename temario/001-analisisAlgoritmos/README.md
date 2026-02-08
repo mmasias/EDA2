@@ -20,7 +20,7 @@ Se hace necesario pues:
 - **Elegir** el algoritmo más eficiente y adecuado para una tarea específica, optimizando recursos.
 - **Diseñar y desarrollar** soluciones de software escalables que puedan manejar un crecimiento en el volumen de datos sin degradar significativamente el rendimiento.
 
-**Evaluación de compromisos**
+### Evaluación de compromisos
 
 El análisis de complejidad nos permite abordar decisiones de diseño donde no existe solución perfecta:
 

@@ -1,20 +1,38 @@
-# Ejemplo C: Encontrar el máximo
+# Ejemplo C: Búsqueda de par en array
 
 ## Código
 
 ```java
-static int findMax(int[] array) {
-    int max = array[0];
-    for (int i = 1; i < array.length; i++) {
-        if (array[i] > max) {
-            max = array[i];
+class FindPair {
+
+    static int[] findPairWithSum(int[] array, int target) {
+        for (int i = 0; i < array.length - 1; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] + array[j] == target) {
+                    return new int[]{array[i], array[j]};
+                }
+            }
+        }
+        return null;
+    }
+
+    public static void main(String[] args) {
+        int[] array = {2, 7, 11, 15};
+        int target = 9;
+        int[] result = findPairWithSum(array, target);
+
+        if (result != null) {
+            System.out.println("Par encontrado: " + result[0] + " + " + result[1] + " = " + target);
+        } else {
+            System.out.println("No existe par que sume " + target);
         }
     }
-    return max;
 }
 ```
 
-## Análisis del algoritmo findMax
+## Análisis del algoritmo findPairWithSum
+
+Este algoritmo busca dos elementos en un array que sumen un valor objetivo. La estrategia es probar todos los pares posibles.
 
 ### Identificación de las operaciones y su complejidad
 
@@ -22,11 +40,11 @@ static int findMax(int[] array) {
 
 |Operación|Descripción|Complejidad|
 |-|-|-|
-|Inicialización del máximo|Incluir acceder al primer elemento y asignarlo a max. Se realiza una sola vez|`O(1)`|
-|Bucle `for`|Se ejecuta `n-1` veces, donde n es el tamaño del arreglo|`O(N)`|
-|Comparación dentro del bucle|La comparación `array[i] > max` se realiza una vez por iteración|`O(1)` por operación, pero `O(N)` al estar dentro del bucle|
-|Asignación dentro del bucle|En el peor caso se realizará en cada iteración|`O(1)` por operación, pero `O(N)` en el peor caso|
-|Retorno del máximo|Operación que se realiza una sola vez|`O(1)`|
+|Inicialización|Declaración del método y variables de control|`O(1)`|
+|Bucle externo (`i`)|Se ejecuta `n-1` veces (desde 0 hasta n-2)|`O(n)`|
+|Bucle interno (`j`)|Para cada iteración de `i`, se ejecuta desde `i+1` hasta `n-1`. En promedio `n/2` veces|`O(n)` por cada `i`|
+|Comparación de suma|Operación constante dentro del bucle anidado|`O(1)` por iteración|
+|Retorno|Operación constante (se ejecuta una vez)|`O(1)`|
 
 </div>
 
@@ -34,16 +52,41 @@ static int findMax(int[] array) {
 
 <div align=center>
 
-`O(1) + O(N) + O(N) + O(N) + O(1) --> 2·O(1) + 3·O(N)`
+`O(1) + O(n) × O(n) + O(1) --> O(n²)`
 
 </div>
 
+### Análisis visual del anidamiento
+
+El bucle interno depende del externo:
+
+```
+i=0: j recorre 1, 2, 3, ..., n-1     -> n-1 iteraciones
+i=1: j recorre 2, 3, 4, ..., n-1     -> n-2 iteraciones
+i=2: j recorre 3, 4, 5, ..., n-1     -> n-3 iteraciones
+...
+i=n-2: j recorre n-1                 -> 1 iteración
+```
+
+Total de iteraciones: `(n-1) + (n-2) + (n-3) + ... + 1`
+
+Esta es la **serie aritmética**: `1 + 2 + 3 + ... + (n-1) = n(n-1)/2 = O(n²)`
+
 ### Simplificación
 
-En el análisis de complejidad asintótica, nos enfocamos en el comportamiento para grandes valores de N:
+<div align=center>
 
-1. Las constantes (3 en 3·O(N)) se eliminan
-2. Los términos de menor orden (O(1)) se vuelven insignificantes
-3. Nos quedamos con el término de mayor crecimiento
+|n|Iteraciones del bucle anido|n²|Relación|
+|-|:-:|:-:|:-:|
+|5|10|25|40% de n²|
+|10|45|100|45% de n²|
+|100|4,950|10,000|49.5% de n²|
+|1,000|499,500|1,000,000|49.95% de n²|
 
-Por lo tanto, la complejidad del algoritmo se simplifica a **O(N)**, lo cual es intuitivamente correcto ya que necesitamos examinar cada elemento del arreglo exactamente una vez para encontrar el máximo.
+</div>
+
+Aunque el número exacto de iteraciones es `n(n-1)/2`, que es aproximadamente la mitad de `n²`, en notación Big O las constantes (como ½) se eliminan.
+
+Por lo tanto, la complejidad del algoritmo se simplifica a **O(n²)**.
+
+**Intuición**: Este algoritmo compara cada elemento con todos los demás elementos. Si duplicamos el tamaño del array, el número de comparaciones se cuadriplica. Este crecimiento cuadrático lo hace impracticable para arrays grandes.
