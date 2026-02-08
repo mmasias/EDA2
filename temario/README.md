@@ -4,7 +4,7 @@
 
 *Antes de optimizar hay que saber medir. Este bloque proporciona el vocabulario y las herramientas conceptuales necesarias para analizar y ejecutar algoritmos: el kit de instrumental básico sin el cual no es posible hablar de eficiencia con precisión. Pero... ¿cómo sé si mi algoritmo es eficiente o solo funciona? ¿Puedo predecir cómo se comportará con datos reales? ¿Tiene la recursividad algún coste oculto?*
 
-- [ ] [Análisis de algoritmos](001-analisisAlgoritmos/README.md)
+- [x] [Análisis de algoritmos](001-analisisAlgoritmos/README.md)
 - [ ] [Recursividad](002-recursividad/README.md)
 
 ## Bloque de organización
