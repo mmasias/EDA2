@@ -8,8 +8,6 @@ Habiendo aprendido a construir programas que funcionan correctamente, es pertine
 
 > **Intuición**: Para entender por qué la organización de los datos importa, ver [¿por qué importa cómo organizamos los datos?](articulos/organizacionImporta.md).
 
-> **Perspectiva**: Sobre la tensión entre teoría académica y práctica profesional, ver [Compromiso teoría/práctica](articulos/realidad.md).
-
 ## ¿Qué?
 
 El análisis de algoritmos es la disciplina que estudia cómo medir y comparar el rendimiento de las soluciones computacionales. Proporciona un marco teórico —la notación asintótica— y herramientas prácticas para evaluar la eficiencia de manera independiente del hardware, permitiendo así tomar decisiones fundamentadas sobre qué algoritmo usar para un problema dado.
@@ -140,3 +138,5 @@ A continuación se presentan ejemplos en código Java para cada categoría de co
 |O(2ⁿ)|Combinaciones binarias, cerradura|[ComplejidadExponencial.java](../../src/001/ComplejidadExponencial.java)|[Crecimiento](../../src/001/ComplejidadExponencial.md)|
 
 </div>
+
+> **Perspectiva**: Sobre la tensión entre teoría académica y práctica profesional, ver [Compromiso teoría/práctica](articulos/realidad.md).
