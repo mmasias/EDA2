@@ -176,5 +176,6 @@ Para profundizar en el proceso completo de análisis —identificar operaciones,
 |Ejemplo A|Suma de elementos de un array|O(n)|[Ver análisis completo →](ejemploA.md)|
 |Ejemplo B|Búsqueda binaria en array ordenado|O(log n)|[Ver análisis completo →](ejemploB.md)|
 |Ejemplo C|Encontrar el máximo en un array|O(n)|[Ver análisis completo →](ejemploC.md)|
+|Ejemplo D|Ordenar y calcular promedio|O(n log n)|[Ver análisis completo →](ejemploD.md)|
 
 </div>
