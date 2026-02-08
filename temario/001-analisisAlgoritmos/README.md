@@ -6,7 +6,7 @@ Los algoritmos son procedimientos o fórmulas para resolver problemas. Pueden se
 
 Habiendo aprendido a construir programas que funcionan correctamente, es pertinente abordar la siguiente pregunta: ***¿qué tan bien funcionan?*** Un algoritmo que resuelve un problema para cientos de elementos puede volverse inusable cuando la entrada crece a millones.
 
-> **Intuición**: Para entender por qué la organización de los datos importa, ver [¿por qué importa cómo organizamos los datos?](articulos/organizacionImporta.md).
+> [*¿Por qué importa cómo organizamos los datos?*](articulos/organizacionImporta.md).
 
 ## ¿Qué?
 
@@ -35,9 +35,17 @@ El análisis de complejidad nos permite abordar decisiones de diseño donde no e
 
 La medición directa del tiempo de ejecución (en segundos) es insuficiente: depende del hardware, del sistema operativo, de la carga del momento en que se ejecuta... Dos ejecuciones del mismo algoritmo en máquinas distintas arrojan resultados diferentes, aunque el algoritmo sea idéntico.
 
-Para hacer comparaciones significativas, es necesario un marco de referencia independiente del hardware. Esto requiere contar operaciones en función del tamaño de la entrada y entender qué constituye dicha entrada: la longitud de un array, la cantidad de nodos en un árbol, el número de bits de un entero.
+Para hacer comparaciones significativas, **es necesario un marco de referencia independiente del hardware**. Esto requiere contar operaciones en función del tamaño de la entrada y entender qué constituye dicha entrada: la longitud de un array, la cantidad de nodos en un árbol, el número de bits de un entero.
 
-Del mismo modo, no basta con conocer el comportamiento promedio: en ingeniería se requiren garantías. El peor caso —aunque parezca pesimista— es la única medida que permite asegurar que un sistema no colapsará bajo condiciones adversas. El caso promedio describe la realidad estadística, pero es difícil de probar. El mejor caso es una ilusión que ofrece poco valor para el diseño robusto.
+Del mismo modo, no basta con conocer el comportamiento promedio: **en ingeniería se requiren garantías**.
+
+<div align=center>
+
+|El mejor caso|El caso promedio|El peor caso|
+|:-:|:-:|:-:|
+Es una ilusión que ofrece poco valor para un diseño robusto.|Describe la realidad estadística, pero es difícil de probar.|Aunque parezca pesimista es la única medida que permite asegurar que un sistema no colapsará bajo condiciones adversas.
+
+</div>
 
 ### La notación asintótica: herramienta de análisis
 
@@ -48,7 +56,7 @@ La notación asintótica es el lenguaje matemático que permite describir el com
 |Big O (O)|Big Omega (Ω)|Big Theta (Θ)|
 |-|-|-|
 |Cota superior.|Cota inferior.|Cota ajustada.
-|Describe el peor escenario posible: el algoritmo "no será más lento que esto".|Describe el mejor escenario posible: el algoritmo "al menos tardará esto".|Cuando Big O y Big Omega coinciden, se tiene una caracterizacion precisa del algoritmo.
+|Describe el peor escenario posible: el algoritmo "no será más lento que esto".|Describe el mejor escenario posible: el algoritmo "al menos tardará esto".|Cuando Big O y Big Omega coinciden, se tiene una caracterizacion **precisa** del algoritmo.
 |Es la medida estándar en ingeniería porque ofrece una garantía de rendimiento.|Establece un límite inferior de rendimiento.|
 
 </div>
@@ -64,27 +72,12 @@ Se puede pues establecer un ranking de eficiencia:
 |O(n)|Lineal|Leer libro página por página; contar personas en fila|
 |O(n log n)|Lineal-logarítmica|Organizar mazo de cartas por grupos (divide y ordena)|
 |O(n²)|Cuadrático|Comparar cada persona con todas las demás (saludos en fiesta)|
-|O(2ⁿ) / O(n!)|Exponencial / Factorial|Probar todas las combinaciones de una cerradura|
+|O(2ⁿ)<br><br>O(n!)|Exponencial<br><br>Factorial|Probar todas las combinaciones de una cerradura|
 
 </div>
 
-O(log n) es más eficiente que O(n), que a su vez es más eficiente que O(n²). O(n log n) se considera el límite práctico para algoritmos de ordenación por comparación.
 
-### Paradigmas algorítmicos
-
-Los algoritmos pueden clasificarse en familias según la estrategia que emplean para resolver problemas:
-
-<div align=center>
-
-|Paradigma|Descripción|Ejemplo cotidiano|Ejemplo técnico|Referencia|
-|-|-|-|-|-|
-|**Fuerza bruta**|Probar todas las posibilidades. Simple pero ineficiente.|Probando llaves una por una en una cerradura; buscar en todos los cajones.|Búsqueda lineal.||
-|**Divide y vencerás**|Partir el problema en subproblemas más pequeños, resolverlos recursivamente y combinar las soluciones.|Dividir un grupo grande en equipos pequeños; clasificar documentos por categorías.|MergeSort, QuickSort, árboles de búsqueda.|Ordenación
-|**Voraces (Greedy)**|Tomar la mejor decisión local en cada paso, esperando que lleve a una solución global óptima.|Elegir siempre la ruta más rápida en GPS; tomar siempre el billete/moneda de mayor valor.|Algoritmos de grafos y rutas más cortas.||
-|**Vuelta atrás (Backtracking)**|Explorar el espacio de soluciones mediante búsqueda sistemática con retroceso cuando una rama no es viable.|Resolver un laberinto probando caminos y retrocediendo al encontrar un muro; probar combinaciones de un candado.|Sudoku, N-Reinas, laberintos.|Backtracking
-|**Programación dinámica**|Descomponer un problema en subproblemas superpuestos y almacenar resultados intermedios para evitar recalcular. Optimiza la recursividad mediante *memoization*.|Guardar las respuestas de un examen ya resuelto para no volver a estudiarlas; recordar rutas conocidas en lugar de recalcular.|Fibonacci optimizado, mochila 0/1.|Recursividad
-
-</div>
+> [Paradigmas](articulos/paradigmas.md)
 
 ### Metodología de análisis
 
