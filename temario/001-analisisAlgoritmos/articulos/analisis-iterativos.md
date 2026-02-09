@@ -55,6 +55,8 @@ De menor a mayor tasa de crecimiento:
 |O(n log n)|Lineal logarítmico|Merge sort|
 |O(n²)|Cuadrático|Bucles anidados simples|
 |O(2ⁿ)|Exponencial|Fibonacci recursivo|
+|O(n!)|Factorial|[Viajante de comercio](https://es.wikipedia.org/wiki/Problema_del_viajante#Algoritmos_Exactos)|
+
 
 </div>
 
