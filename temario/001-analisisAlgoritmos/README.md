@@ -99,7 +99,7 @@ El análisis de complejidad se realiza contando operaciones elementales en funci
 - **Bucles independientes**: Las complejidades se multiplican. Un bucle externo O(n) que contiene un bucle interno O(n) resulta en O(n × n) = O(n²).
 - **Bucles dependientes**: Cuando el bucle interno depende del índice del externo (ej: `for i in 0..n; for j in 0..i`), se utiliza sumatorias. Este caso genera la serie aritmética 1 + 2 + 3 + ... + n = n(n+1)/2 = O(n²).
 
-> **Profundización**: Para un análisis detallado con ejemplos prácticos, simplificación de fórmulas y comparación de algoritmos iterativos, ver [Análisis de algoritmos iterativos](articulos/analisis-iterativos.md).
+> **Profundización**: Para un análisis detallado con ejemplos prácticos, simplificación de fórmulas y comparación de algoritmos iterativos, ver [Análisis de algoritmos iterativos](articulos/analisis-iterativos.md#cómo).
 
 **Análisis de algoritmos recursivos**
 
