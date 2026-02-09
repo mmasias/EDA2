@@ -64,7 +64,7 @@ De menor a mayor tasa de crecimiento:
 
 Para identificar la complejidad de un algoritmo iterativo, consideramos:
 
-**Conteo de operaciones**
+**[Conteo de operaciones](conteoEjemplos.md)**
 
 - Si el número de operaciones se duplica al añadir un elemento → O(2ⁿ)
 - Si el crecimiento se relaciona con el cuadrado del tamaño → O(n²)
@@ -89,6 +89,22 @@ Para identificar la complejidad de un algoritmo iterativo, consideramos:
 - Entre términos polinomiales, el de mayor exponente domina
 - Los términos logarítmicos crecen más lentamente que los lineales
 - Las constantes y los términos de menor grado pueden ignorarse
+
+### Ejemplos de análisis paso a paso
+
+Para profundizar en el proceso completo de análisis —identificar operaciones, sumar complejidades y simplificar— se presentan los siguientes ejemplos detallados:
+
+<div align=center>
+
+|Ejemplo|Algoritmo|Complejidad|Enlace|
+|-|-|-|-|
+|Ejemplo A|Suma de elementos de un array|O(n)|[Ver análisis completo](ejemploA.md)|
+|Ejemplo B|Encontrar el máximo en un array|O(n)|[Ver análisis completo](ejemploB.md)|
+|Ejemplo C|Búsqueda de par en array (bucles anidados)|O(n²)|[Ver análisis completo](ejemploC.md)|
+|Ejemplo D|Búsqueda binaria en array ordenado|O(log n)|[Ver análisis completo](ejemploD.md)|
+|Ejemplo E|Ordenar y calcular promedio|O(n log n)|[Ver análisis completo](ejemploE.md)|
+
+</div>
 
 ### Ejemplos prácticos de simplificación
 
@@ -171,18 +187,3 @@ Este ejemplo ilustra por qué el análisis de complejidad importa: la diferencia
 
 La notación Big O describe el comportamiento de un algoritmo **cuando el tamaño de la entrada tiende a infinito**. Sin embargo, en la práctica trabajamos con conjuntos de datos finitos y muchas veces pequeños. En estos casos, el análisis asintótico puede ser engañoso. [***Ver más***](limitacionesAnalisisAsintotico.md)
 
-## Ejemplos de análisis paso a paso
-
-Para profundizar en el proceso completo de análisis —identificar operaciones, sumar complejidades y simplificar— se presentan los siguientes ejemplos detallados:
-
-<div align=center>
-
-|Ejemplo|Algoritmo|Complejidad|Enlace|
-|-|-|-|-|
-|Ejemplo A|Suma de elementos de un array|O(n)|[Ver análisis completo](ejemploA.md)|
-|Ejemplo B|Encontrar el máximo en un array|O(n)|[Ver análisis completo](ejemploB.md)|
-|Ejemplo C|Búsqueda de par en array (bucles anidados)|O(n²)|[Ver análisis completo](ejemploC.md)|
-|Ejemplo D|Búsqueda binaria en array ordenado|O(log n)|[Ver análisis completo](ejemploD.md)|
-|Ejemplo E|Ordenar y calcular promedio|O(n log n)|[Ver análisis completo](ejemploE.md)|
-
-</div>
