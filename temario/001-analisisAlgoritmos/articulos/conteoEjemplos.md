@@ -21,6 +21,7 @@ Mover n discos entre tres torres siguiendo las reglas del juego:
 - 2 discos: 3 movimientos
 - 3 discos: 7 movimientos
 - 4 discos: 15 movimientos
+- 5 discos: 31 movimientos
 
 Fórmula: 2ⁿ - 1. Cada disco adicional más que duplica los movimientos necesarios.
 
@@ -49,7 +50,7 @@ Total: n(n-1)/2 ≈ n²/2
 
 ### Comparar todos los pares de elementos
 
-Tienes n elementos y necesitas comparar cada uno con todos los demás.
+Tienes n elementos y hay que comparar cada uno con todos los demás.
 
 - 10 elementos: ~50 comparaciones
 - 20 elementos: ~200 comparaciones (×4)
@@ -69,7 +70,7 @@ Duplicar el lado multiplica por 8 el número de operaciones.
 
 ### Rellenar un edificio cúbico
 
-Construyes un edificio de n pisos, con n habitaciones por piso, y n muebles por habitación.
+Construir un edificio de n pisos, con n habitaciones por piso, y n muebles por habitación.
 
 - Edificio 3×3×3: 27 muebles a colocar
 - Edificio 6×6×6: 216 muebles a colocar (×8)

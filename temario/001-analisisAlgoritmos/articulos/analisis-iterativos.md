@@ -90,22 +90,6 @@ Para identificar la complejidad de un algoritmo iterativo, consideramos:
 - Los términos logarítmicos crecen más lentamente que los lineales
 - Las constantes y los términos de menor grado pueden ignorarse
 
-### Ejemplos de análisis paso a paso
-
-Para profundizar en el proceso completo de análisis —identificar operaciones, sumar complejidades y simplificar— se presentan los siguientes ejemplos detallados:
-
-<div align=center>
-
-|Ejemplo|Algoritmo|Complejidad|Enlace|
-|-|-|-|-|
-|Ejemplo A|Suma de elementos de un array|O(n)|[Ver análisis completo](ejemploA.md)|
-|Ejemplo B|Encontrar el máximo en un array|O(n)|[Ver análisis completo](ejemploB.md)|
-|Ejemplo C|Búsqueda de par en array (bucles anidados)|O(n²)|[Ver análisis completo](ejemploC.md)|
-|Ejemplo D|Búsqueda binaria en array ordenado|O(log n)|[Ver análisis completo](ejemploD.md)|
-|Ejemplo E|Ordenar y calcular promedio|O(n log n)|[Ver análisis completo](ejemploE.md)|
-
-</div>
-
 ### Ejemplos prácticos de simplificación
 
 **Fórmula: 7n³ + 15n² + 2n + 8**
@@ -121,6 +105,22 @@ Para profundizar en el proceso completo de análisis —identificar operaciones,
 - n = 100: 5(100)(6.64) + 3(100) + 2 = 3320 + 300 + 2 = 3622
 - **Término dominante**: 5n log n
 - **Notación Big O**: O(n log n)
+
+### Ejemplos de análisis paso a paso
+
+Para profundizar en el proceso completo de análisis —identificar operaciones, sumar complejidades y simplificar— se presentan los siguientes ejemplos detallados:
+
+<div align=center>
+
+|Ejemplo|Algoritmo|Complejidad|Enlace|
+|-|-|-|-|
+|Ejemplo A|Suma de elementos de un array|O(n)|[Ver análisis completo](ejemploA.md)|
+|Ejemplo B|Encontrar el máximo en un array|O(n)|[Ver análisis completo](ejemploB.md)|
+|Ejemplo C|Búsqueda de par en array (bucles anidados)|O(n²)|[Ver análisis completo](ejemploC.md)|
+|Ejemplo D|Búsqueda binaria en array ordenado|O(log n)|[Ver análisis completo](ejemploD.md)|
+|Ejemplo E|Ordenar y calcular promedio|O(n log n)|[Ver análisis completo](ejemploE.md)|
+
+</div>
 
 ## Ejemplo comparativo: Búsqueda lineal vs. Búsqueda binaria
 
