@@ -2,7 +2,7 @@
 
 ## ¿Por qué?
 
-Los algoritmos son procedimientos o fórmulas para resolver problemas. Pueden ser tan simples como un procedimiento de suma o tan complejos como el algoritmo que subyace a un motor de búsqueda en Internet. Los algoritmos se definen por su claridad, precisión y la finitud de sus pasos. (Visto en [Programación 1](https://github.com/mmasias/PRG1/blob/main/temario/00100-algoritmos.md))
+Los algoritmos son procedimientos o fórmulas para resolver problemas. Pueden ser tan simples como un procedimiento de suma o tan complejos como el algoritmo que subyace a un motor de búsqueda en Internet. Los algoritmos se definen por su claridad, precisión y la finitud de sus pasos. (Visto en [Programación 1](https://github.com/mmasias/PRG1/blob/main/temario/00100-algoritmos.md#qué))
 
 Habiendo aprendido a construir programas que funcionan correctamente, es pertinente abordar la siguiente pregunta: ***¿qué tan bien funcionan?*** Un algoritmo que resuelve un problema para cientos de elementos puede volverse inusable cuando la entrada crece a millones.
 
