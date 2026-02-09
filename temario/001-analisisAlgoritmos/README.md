@@ -76,6 +76,13 @@ Se puede pues establecer un ranking de eficiencia:
 
 </div>
 
+<div align=center>
+  
+  ![Ejemplo visual de O(n)](../../images/IMG_20260209_112626.png)
+  
+</div>
+
+
 
 > [Paradigmas](articulos/paradigmas.md)
 
