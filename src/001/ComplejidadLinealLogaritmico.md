@@ -12,3 +12,5 @@ O(n log n) crece más rápido que O(n) pero mucho más lento que O(n²). Es el l
 |10000|132,877|13.3×|0.13%|Ordenar baraja completa|
 
 </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

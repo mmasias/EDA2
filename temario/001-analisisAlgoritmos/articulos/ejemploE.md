@@ -105,3 +105,5 @@ Cuando n crece, el término `n log n` crece significativamente más rápido que 
 Por lo tanto, la complejidad del algoritmo se simplifica a **O(n log n)**.
 
 **Intuición**: Aunque recorremos el array dos veces (una para ordenar, otra para sumar), la ordenación es tan costosa que domina el tiempo total. La suma adicional es insignificante comparada con la ordenación cuando n es grande.
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

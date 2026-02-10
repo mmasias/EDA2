@@ -64,3 +64,5 @@ class BinarySearch {
 ### Simplificación
 
 Al simplificar y enfocarnos en el término de mayor crecimiento, las constantes y los términos de menor crecimiento son considerados insignificantes frente al término dominante. Por lo tanto, el resultado final se simplifica a **O(log N)**, reflejando la eficiencia de la búsqueda binaria en conjuntos de datos ordenados.
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

@@ -69,3 +69,5 @@ Evaluar si un algoritmo es viable para el problema en cuestión. Distinguir entr
   - [ ] [Estructuras de datos avanzadas](temario/006-estructurasDatosAvanzadas/README.md)
 - Paradigmas complementarios
   - [ ] [Inmutabilidad](temario/007-inmutabilidad/README.md)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

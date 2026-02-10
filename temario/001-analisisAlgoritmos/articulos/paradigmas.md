@@ -13,3 +13,5 @@ Los algoritmos pueden clasificarse en familias según la estrategia que emplean 
 |**Programación dinámica**|Descomponer un problema en subproblemas superpuestos y almacenar resultados intermedios para evitar recalcular. Optimiza la recursividad mediante *memoization*.|Guardar las respuestas de un examen ya resuelto para no volver a estudiarlas; recordar rutas conocidas en lugar de recalcular.|Fibonacci optimizado, mochila 0/1.|Recursividad
 
 </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

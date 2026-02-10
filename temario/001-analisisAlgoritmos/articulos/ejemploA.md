@@ -48,3 +48,5 @@ class SumArray {
 Dado que en un análisis de complejidad estamos interesados en el comportamiento asintótico para grandes valores de N, las constantes y los términos de menor crecimiento (como O(1)) se consideran insignificantes frente al término de mayor crecimiento.
 
 Por lo tanto, simplificamos la expresión a **O(N)**, que es el término dominante.
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

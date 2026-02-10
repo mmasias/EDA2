@@ -44,6 +44,8 @@
 
 Estos ejemplos ilustran por qué el análisis de algoritmos y estructuras de datos no es solo un ejercicio teórico: tiene consecuencias directas en cómo diseñamos sistemas eficientes.
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 
 

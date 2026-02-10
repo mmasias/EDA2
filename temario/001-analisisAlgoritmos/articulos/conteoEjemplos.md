@@ -84,3 +84,5 @@ Examinar todas las combinaciones posibles de 3 elementos entre n disponibles.
 - 20 elementos: 1140 tripletes (×9.5)
 
 Relación aproximada: C(n,3) = n(n-1)(n-2)/6 ≈ n³/6
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

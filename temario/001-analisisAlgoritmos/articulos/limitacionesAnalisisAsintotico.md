@@ -51,3 +51,5 @@ El análisis asintótico es una herramienta poderosa para predec comportamiento 
 3. **La implementación específica** importa: dos algoritmos O(n log n) pueden tener rendimiento muy diferente
 
 Big O nos da el comportamiento a largo plazo, pero no necesariamente predice el ganador para el tamaño de datos que realmente tenemos.
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

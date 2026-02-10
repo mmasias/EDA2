@@ -190,3 +190,4 @@ Este ejemplo ilustra por qué el análisis de complejidad importa: la diferencia
 
 La notación Big O describe el comportamiento de un algoritmo **cuando el tamaño de la entrada tiende a infinito**. Sin embargo, en la práctica trabajamos con conjuntos de datos finitos y muchas veces pequeños. En estos casos, el análisis asintótico puede ser engañoso. [***Ver más***](limitacionesAnalisisAsintotico.md)
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

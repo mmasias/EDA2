@@ -90,3 +90,5 @@ Aunque el número exacto de iteraciones es `n(n-1)/2`, que es aproximadamente la
 Por lo tanto, la complejidad del algoritmo se simplifica a **O(n²)**.
 
 **Intuición**: Este algoritmo compara cada elemento con todos los demás elementos. Si duplicamos el tamaño del array, el número de comparaciones se cuadriplica. Este crecimiento cuadrático lo hace impracticable para arrays grandes.
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

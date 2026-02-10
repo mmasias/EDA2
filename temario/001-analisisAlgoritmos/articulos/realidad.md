@@ -72,3 +72,5 @@ El verdadero objetivo no es convertirse en un experto en análisis matemático, 
    - Mantenerse actualizado con nuevas técnicas y herramientas
 
 La maestría no está en los cálculos, sino en la capacidad de mirar un problema y, casi instintivamente, saber cómo abordarlo de manera eficiente. La teoría y los ejercicios son el camino para desarrollar esta intuición invaluable.
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

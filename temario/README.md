@@ -31,3 +31,5 @@
 *Inmutabilidad cierra el curso conectando con la industria moderna: su valor solo se aprecia después de "sufrir" los problemas de mutación en los bloques anteriores. ¿Qué ventajas tiene no modificar nunca mis datos? ¿Cómo hago para trabajar con estructuras que no cambian? ¿Es posible ser eficiente sin mutar?*
 
 - [ ] [Inmutabilidad](007-inmutabilidad/README.md)
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

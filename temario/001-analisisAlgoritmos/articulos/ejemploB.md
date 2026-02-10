@@ -47,3 +47,5 @@ En el análisis de complejidad asintótica, nos enfocamos en el comportamiento p
 3. Nos quedamos con el término de mayor crecimiento
 
 Por lo tanto, la complejidad del algoritmo se simplifica a **O(N)**, lo cual es intuitivamente correcto ya que necesitamos examinar cada elemento del arreglo exactamente una vez para encontrar el máximo.
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
