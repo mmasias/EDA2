@@ -2,7 +2,9 @@
 
 ## Bloque instrumental: las herramientas
 
-*Antes de optimizar hay que saber medir. Este bloque proporciona el vocabulario y las herramientas conceptuales necesarias para analizar y ejecutar algoritmos: el kit de instrumental básico sin el cual no es posible hablar de eficiencia con precisión. Pero... ¿cómo sé si mi algoritmo es eficiente o solo funciona? ¿Puedo predecir cómo se comportará con datos reales? ¿Tiene la recursividad algún coste oculto?*
+*Antes de optimizar hay que saber medir. Este bloque proporciona el vocabulario y las herramientas conceptuales necesarias para analizar y ejecutar algoritmos: el kit de instrumental básico sin el cual no es posible hablar de eficiencia con precisión. Pero... ¿cómo sé si mi algoritmo es eficiente o solo funciona? ¿Puedo predecir cómo se comportará con datos reales?*
+
+*El lenguaje coloquial es perezoso. Al llamar "repetición" a todo, tratamos igual a un metrónomo (iterativo) que a un terremoto (recurrente). ¿Consecuencia?: Intentamos predecir terremotos con calendarios y gestionar semáforos con oráculos. Clasificar correctamente el fenómeno es el primer paso para elegir la herramienta de análisis adecuada.*
 
 - [x] [Análisis de algoritmos](001-analisisAlgoritmos/README.md)
 - [ ] [Recursividad](002-recursividad/README.md)
