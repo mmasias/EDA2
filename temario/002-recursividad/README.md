@@ -1,5 +1,7 @@
 # 002. Recursividad
 
+Ver primero: [***patrones***](intro/README.md)
+
 ## ¿Por qué?
 
 ## ¿Qué?
