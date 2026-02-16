@@ -50,8 +50,8 @@ Cuando la **estructura del problema** es recursiva, la **solución recursiva** e
 
 ```java
 class Nodo {
-    int valor;
-    Nodo siguiente;
+   private int valor;
+   private Nodo siguiente;
 }
 ```
 
