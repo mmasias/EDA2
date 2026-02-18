@@ -14,8 +14,8 @@
 
 - Encontramos lo más sencillo: el caso base. ¿En qué caso no hay que hacer caso ningún cálculo (o sea, no hay proceso recursivo)?
   - En el cálculo de factorial: caso base, 0. Lo pongo en la primera fila, primera columna: 0. En la segunda columna, 1.
-  - Para ver si un elemento es miembro de una lista: Si el elemento que me piden es el primero de la lista, el elemento es miebro de la lista: en la primera columna, la lista con aquel primer elemento. En la segunda columna, true.
-  - Suma de elementos de una lista: Lista vacía: devuelvo cero. 
+  - Para ver si un elemento es miembro de una lista: Si el elemento que me piden es el primero de la lista, el elemento es miembro de la lista: en la primera columna, la lista con aquel primer elemento. En la segunda columna, `true`.
+  - Suma de elementos de una lista: Lista vacía, devuelvo cero.
 
 > Hay que encontrar exactamente el caso base: ni más restrictivo, ni más permisivo. ¿Cómo? ¡Con la práctica! De a pocos la experiencia demostrará que, sistemáticamente los casos base suelen ser cero para números, suelen ser listas vacías o excepcionalmente listas con un único elemento, etc...
 
@@ -30,9 +30,9 @@ Elijo un valor "al azar":
 
 #### Desciendo un orden
 
-En una fila justo encima, 
+En una fila justo encima
 
-- El 5 lo hago tender un grado cero: 4. Entonces, pongo (sobre el 5), 4 en la primera coluna y 24 en la segunda columna
+- El 5 lo hago tender un grado cero: 4. Entonces, pongo (sobre el 5), 4 en la primera columna y 24 en la segunda columna
 
 > La experiencia demostrará que "tender a" en números habitualmente es restar un número. Con listas es quitar un elemento.
 
