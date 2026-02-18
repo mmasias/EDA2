@@ -70,8 +70,6 @@ public class SumaNumerosLista {
 }
 ```
 
-</details>
-
 ***Otra forma:***
 
 En Java, para representar el "resto" de un array de forma eficiente sin crear copias nuevas en cada paso, lo habitual es usar un índice que vamos incrementando.
@@ -93,3 +91,5 @@ public class SumaNumerosLista {
     }
 }
 ```
+
+</details>
