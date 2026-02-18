@@ -12,7 +12,7 @@
 
 ### La(s) fila(s) del caso base
 
-- Encontramos lo más sencillo: el caso base. ¿En qué caso no hay que hacer caso ningún cálculo (o sea, no hay proceso recursivo)?
+- Encontramos lo más sencillo: el caso base. ¿En qué caso no hay que hacer ningún cálculo (o sea, no hay proceso recursivo)?
   - En el cálculo de factorial: caso base, 0. Lo pongo en la primera fila, primera columna: 0. En la segunda columna, 1.
   - Para ver si un elemento es miembro de una lista: Si el elemento que me piden es el primero de la lista, el elemento es miembro de la lista: en la primera columna, la lista con aquel primer elemento. En la segunda columna, `true`.
   - Suma de elementos de una lista: Lista vacía, devuelvo cero.
