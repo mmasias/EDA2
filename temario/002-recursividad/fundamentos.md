@@ -132,6 +132,7 @@ Función funcionRecursiva(parametro)
          procesoLocal = combinar(problema, funcionRecursiva(parametrosReducidos));
          RETORNAR procesoLocal;
     FIN_SI
+
 Fin_Función
 ```
 
