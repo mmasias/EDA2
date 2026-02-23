@@ -114,15 +114,18 @@ Detiene la llamada recursiva|Es la parte donde la función se llama a sí misma,
 
 </div>
 
-```java
-    tipoRetorno funcionRecursiva(parametros) {
-        if (condicionCasoBase) {
-            return valorDirecto;
-        } else {
-                procesoLocal = procesoLocal + funcionRecursiva(parametrosReducidos);
-                return procesoLocal;
-        }
-    }
+```
+Función funcionRecursiva(parametro)
+    
+    SI (es condicion caso base) ENTONCES
+        RETORNAR valorDirecto;
+    SINO
+         parametrosReducidos = avanzarACasoBase(parametros);
+         procesoLocal = combinar(problema, funcionRecursiva(parametrosReducidos));
+         RETORNAR procesoLocal;
+    FIN_SI
+
+Fin_Función
 ```
 
 ### Primera implementación formal: factorial
