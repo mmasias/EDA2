@@ -10,13 +10,13 @@
 
 Antes de implementar funciones recursivas completas, es necesario entender **qué efecto tiene cada pieza según dónde se coloca**.
 
-Una función recursiva tiene pocas piezas: la llamada recursiva, el caso base, las operaciones locales. Pero el comportamiento cambia radicalmente según su disposición. Mover una línea de sitio puede convertir una cuenta atrás en una cuenta hacia arriba, o un programa funcional en un stack overflow.
+Una función recursiva tiene pocas piezas: la llamada recursiva, el caso base, las operaciones locales. Pero el comportamiento cambia radicalmente según su disposición. Mover una línea de sitio puede convertir una cuenta atrás en una cuenta hacia arriba o un programa funcional en un stack overflow.
 
 Sin esta experimentación previa, la estructura `if (casoBase) return; ... return f(n-1)` se memoriza como receta sin entender **por qué** cada pieza está donde está.
 
 ## ¿Qué?
 
-Una exploración progresiva del *layout* de los componentes de una función recursiva, observando qué cambia con cada movimiento.
+Una exploración progresiva del esquema de los componentes de una función recursiva, observando qué cambia con cada movimiento.
 
 ## ¿Para qué?
 
@@ -45,9 +45,7 @@ class Topologia {
 Exception in thread "main" java.lang.StackOverflowError
 ```
 
-No hay salida visible. No hay caso base. No hay nada que observar salvo la muerte del programa.
-
-> **Pregunta**: ¿Qué ha pasado? ¿Por qué no vemos nada?
+No hay salida visible. No hay caso base. No hay nada que observar (salvo la muerte del programa).
 
 ### Fase 2 — Print antes de la llamada
 
@@ -104,7 +102,7 @@ Exception in thread "main" java.lang.StackOverflowError
 
 No imprime **nada**. El `println` está ahí, pero nunca se ejecuta.
 
-> **Pregunta**: ¿Por qué? Si la línea existe en el código...
+> **Pregunta**: ¿Por qué si la línea existe en el código?...
 
 **Respuesta**: Lo que está *después* de la llamada recursiva solo se ejecuta cuando la llamada **vuelve**. Si la llamada nunca vuelve (porque no hay caso base), lo de abajo no existe.
 
