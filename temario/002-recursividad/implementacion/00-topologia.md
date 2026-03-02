@@ -1,6 +1,6 @@
 <div align=right>
 
-<sub>[Inicio](README.md) / [**00**](00-topologia.md) / [01](01-metodo-iterativo.md) / [02](02-recursion-sin-caso-base.md) / [03](03-un-caso-base.md) / [04](04-multiples-casos-base.md) / [05](05-multiples-llamadas-condicional.md) / [06](06-multiples-llamadas-ambas.md) / [07](07-interrupcion-recursiva.md)</sub>
+<sub>[**Inicio**](README.md) / [**00**](00-topologia.md) / [01](01-metodo-iterativo.md) / [02](02-recursion-sin-caso-base.md) / [03](03-un-caso-base.md) / [04](04-multiples-casos-base.md) / [05](05-multiples-llamadas-condicional.md) / [06](06-multiples-llamadas-ambas.md) / [07](07-interrupcion-recursiva.md) / [08](08-el-estado.md) / [09](09-hacer-y-deshacer.md) / [10](10-el-arbol-de-decisiones.md) / [11](11-una-solucion.md) / [12](12-todas-las-soluciones.md) / [13](13-poda.md) / [14](14-cierre.md)</sub>
 
 </div>
 
@@ -325,8 +325,6 @@ Entonces:
 
 </div>
 
-Con este mapa en mente, implementar funciones recursivas deja de ser seguir una receta: es colocar piezas sabiendo qué efecto tiene cada posición.
+Con este mapa en mente, implementar funciones recursivas deja de ser seguir una receta: es colocar piezas sabiendo qué efecto tienen en cada posición.
 
----
-
-[Siguiente: Implementación →](README.md)
+> [Siguiente: Anclar lo que NO es recursivo](01-metodo-iterativo.md)

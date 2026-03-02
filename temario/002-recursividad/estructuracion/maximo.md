@@ -2,8 +2,7 @@
 
 Encontrar el elemento máximo de una lista de números.
 
-<details>
-<summary>Ver análisis recursivo</summary>
+## Análisis recursivo
 
 <div align=center>
 
@@ -22,12 +21,7 @@ Cabeza <= f(n-1) ==> f(n-1)
 
 </div>
 
-</details>
-
-## Pseudocódigo & código
-
-<details>
-<summary>Ver pseudocódigo</summary>
+## Pseudocódigo
 
 ```text
 FUNCION maximo(lista)
@@ -49,39 +43,3 @@ FUNCION maximo(lista)
 
 FIN FUNCIÓN
 ```
-
-</details>
-
-<details>
-<summary>Ver código Java</summary>
-
-```java
-import java.util.Arrays;
-
-public class MaximoLista {
-
-    public static int maximo(int[] lista) {
-        if (lista.length == 1) {
-            return lista[0];
-        }
-
-        int cabeza = lista[0];
-        int[] resto = Arrays.copyOfRange(lista, 1, lista.length);
-
-        int maximoResto = maximo(resto);
-
-        if (cabeza > maximoResto) {
-            return cabeza;
-        } else {
-            return maximoResto;
-        }
-    }
-
-    public static void main(String[] args) {
-        int[] datos = {5, 2, 4};
-        System.out.println("El máximo es: " + maximo(datos));
-    }
-}
-```
-
-</details>

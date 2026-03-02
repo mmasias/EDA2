@@ -2,8 +2,7 @@
 
 Buscar si un elemento existe en una lista.
 
-<details>
-<summary>Ver análisis recursivo</summary>
+## Análisis recursivo
 
 <div align=center>
 
@@ -21,12 +20,7 @@ Cabeza != numero ==> f(n-1)
 
 </div>
 
-</details>
-
-## Pseudocódigo & código
-
-<details>
-<summary>Ver pseudocódigo</summary>
+## Pseudocódigo
 
 ```text
 FUNCION encontrarElemento(lista, numero)
@@ -44,37 +38,3 @@ FUNCION encontrarElemento(lista, numero)
 
 FIN FUNCIÓN
 ```
-
-</details>
-
-<details>
-<summary>Ver código Java</summary>
-
-```java
-import java.util.Arrays;
-
-public class EncontrarElemento {
-
-    public static boolean buscar(int[] lista, int numero) {
-        if (lista.length == 0) {
-            return false;
-        }
-
-        int cabeza = lista[0];
-        if (cabeza == numero) {
-            return true;
-        }
-
-        int[] resto = Arrays.copyOfRange(lista, 1, lista.length);
-        return buscar(resto, numero);
-    }
-
-    public static void main(String[] args) {
-        int[] datos = {5, 6, 3, 5, 2, 4};
-        System.out.println("¿Está el 3?: " + buscar(datos, 3));
-        System.out.println("¿Está el 9?: " + buscar(datos, 9));
-    }
-}
-```
-
-</details>

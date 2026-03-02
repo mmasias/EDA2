@@ -2,8 +2,7 @@
 
 Contar cuántas veces aparece una letra en una cadena de texto.
 
-<details>
-<summary>Ver análisis recursivo</summary>
+## Análisis recursivo
 
 <div align=center>
 
@@ -25,12 +24,7 @@ cabeza == letra ==> 1 + f(n-1)
 
 </div>
 
-</details>
-
-## Pseudocódigo & código
-
-<details>
-<summary>Ver pseudocódigo</summary>
+## Pseudocódigo
 
 ```text
 FUNCION contarApariciones(cadena, letra)
@@ -50,34 +44,3 @@ FUNCION contarApariciones(cadena, letra)
 
 FIN FUNCIÓN
 ```
-
-</details>
-
-<details>
-<summary>Ver código Java</summary>
-
-```java
-public class ContarApariciones {
-
-    public static int contar(String cadena, char letra) {
-        if (cadena.isEmpty()) {
-            return 0;
-        }
-
-        char cabeza = cadena.charAt(0);
-        String resto = cadena.substring(1);
-
-        if (cabeza == letra) {
-            return 1 + contar(resto, letra);
-        } else {
-            return contar(resto, letra);
-        }
-    }
-
-    public static void main(String[] args) {
-        System.out.println("Apariciones de 'a' en 'bcdada': " + contar("bcdada", 'a'));
-    }
-}
-```
-
-</details>

@@ -2,8 +2,7 @@
 
 Verificar si una lista está ordenada de forma ascendente.
 
-<details>
-<summary>Ver análisis recursivo</summary>
+## Análisis recursivo
 
 <div align=center>
 
@@ -21,12 +20,7 @@ Cabeza < SiguienteCabeza && f(n-1)
 
 </div>
 
-</details>
-
-## Pseudocódigo & código
-
-<details>
-<summary>Ver pseudocódigo</summary>
+## Pseudocódigo
 
 ```text
 FUNCION listaOrdenada(lista)
@@ -47,42 +41,3 @@ FUNCION listaOrdenada(lista)
 
 FIN FUNCIÓN
 ```
-
-</details>
-
-<details>
-<summary>Ver código Java</summary>
-
-```java
-import java.util.Arrays;
-
-public class ListaOrdenada {
-
-    public static boolean estaOrdenada(int[] lista) {
-        if (lista.length <= 1) {
-            return true;
-        }
-
-        int cabeza = lista[0];
-        int[] resto = Arrays.copyOfRange(lista, 1, lista.length);
-
-        int siguienteCabeza = resto[0];
-
-        if (cabeza < siguienteCabeza && estaOrdenada(resto)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    public static void main(String[] args) {
-        int[] ok = {1, 3, 5, 7};
-        int[] mal = {5, 3, 5, 7};
-
-        System.out.println("¿Está ordenada {1, 3, 5, 7}?: " + estaOrdenada(ok));
-        System.out.println("¿Está ordenada {5, 3, 5, 7}?: " + estaOrdenada(mal));
-    }
-}
-```
-
-</details>

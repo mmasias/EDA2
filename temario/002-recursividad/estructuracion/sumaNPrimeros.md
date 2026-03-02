@@ -2,8 +2,7 @@
 
 Calcular la suma de los n primeros números enteros positivos.
 
-<details>
-<summary>Ver análisis recursivo</summary>
+## Análisis recursivo
 
 <div align=center>
 
@@ -20,12 +19,7 @@ n + f(n-1)
 
 </div>
 
-</details>
-
-## Pseudocódigo & código
-
-<details>
-<summary>Ver pseudocódigo</summary>
+## Pseudocódigo
 
 ```text
 FUNCION sumaNPrimeros(n)
@@ -38,27 +32,3 @@ FUNCION sumaNPrimeros(n)
 
 FIN FUNCIÓN
 ```
-
-</details>
-
-<details>
-<summary>Ver código Java</summary>
-
-```java
-public class SumaNPrimeros {
-
-    public static int calcular(int n) {
-        if (n == 0) {
-            return 0;
-        }
-
-        return n + calcular(n - 1);
-    }
-
-    public static void main(String[] args) {
-        System.out.println("Suma de los 5 primeros: " + calcular(5));
-    }
-}
-```
-
-</details>

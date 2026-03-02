@@ -2,8 +2,7 @@
 
 Calcular el producto de dos números usando solo sumas.
 
-<details>
-<summary>Ver análisis recursivo</summary>
+## Análisis recursivo
 
 <div align=center>
 
@@ -21,12 +20,7 @@ a + f(a,b-1)
 
 </div>
 
-</details>
-
-## Pseudocódigo & código
-
-<details>
-<summary>Ver pseudocódigo</summary>
+## Pseudocódigo
 
 ```text
 FUNCION multiplicar(a, b)
@@ -39,29 +33,3 @@ FUNCION multiplicar(a, b)
 
 FIN FUNCIÓN
 ```
-
-</details>
-
-<details>
-<summary>Ver código Java</summary>
-
-```java
-public class MultiplicacionSumas {
-
-    public static int multiplicar(int a, int b) {
-        if (b == 0) {
-            return 0;
-        }
-
-        return a + multiplicar(a, b - 1);
-    }
-
-    public static void main(String[] args) {
-        System.out.println("5 × 5 = " + multiplicar(5, 5));  // 25
-        System.out.println("3 × 7 = " + multiplicar(3, 7));  // 21
-        System.out.println("8 × 0 = " + multiplicar(8, 0));  // 0
-    }
-}
-```
-
-</details>

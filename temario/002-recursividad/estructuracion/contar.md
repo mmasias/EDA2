@@ -2,8 +2,7 @@
 
 Generar una cadena con los números desde 0 hasta n, separados por comas.
 
-<details>
-<summary>Ver análisis recursivo</summary>
+## Análisis recursivo
 
 <div align=center>
 
@@ -18,12 +17,7 @@ f(n-1) & n
 
 </div>
 
-</details>
-
-## Pseudocódigo & código
-
-<details>
-<summary>Ver pseudocódigo</summary>
+## Pseudocódigo
 
 ```text
 FUNCION contar(n)
@@ -36,27 +30,3 @@ FUNCION contar(n)
 
 FIN FUNCIÓN
 ```
-
-</details>
-
-<details>
-<summary>Ver código Java</summary>
-
-```java
-public class Contar {
-
-    public static String contar(int n) {
-        if (n == 0) {
-            return "0";
-        }
-
-        return contar(n - 1) + ", " + n;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(contar(5));
-    }
-}
-```
-
-</details>

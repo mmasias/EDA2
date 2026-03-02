@@ -2,8 +2,7 @@
 
 Invertir una cadena de texto dada.
 
-<details>
-<summary>Ver análisis recursivo</summary>
+## Análisis recursivo
 
 <div align=center>
 
@@ -20,12 +19,7 @@ f(n-1) + cabeza
 
 </div>
 
-</details>
-
-## Pseudocódigo & código
-
-<details>
-<summary>Ver pseudocódigo</summary>
+## Pseudocódigo
 
 ```text
 FUNCION invertirCadena(cadena)
@@ -41,30 +35,3 @@ FUNCION invertirCadena(cadena)
 
 FIN FUNCIÓN
 ```
-
-</details>
-
-<details>
-<summary>Ver código Java</summary>
-
-```java
-public class InvertirCadena {
-
-    public static String invertir(String cadena) {
-        if (cadena.isEmpty()) {
-            return "";
-        }
-
-        char cabeza = cadena.charAt(0);
-        String resto = cadena.substring(1);
-
-        return invertir(resto) + cabeza;
-    }
-
-    public static void main(String[] args) {
-        System.out.println("Invertido: " + invertir("abcd")); // Imprime "dcba"
-    }
-}
-```
-
-</details>
