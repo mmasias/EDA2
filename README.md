@@ -2,7 +2,9 @@
 
 <div align=right>
 
-*Construir (PRG1/PRG2) → organizar (EDA1) → optimizar (EDA2).*
+|<sub>**Construir (PRG1/PRG2) → organizar (EDA1) → optimizar (EDA2)**</sub>|
+|-:|
+|<sup>[Algoritmos](temario/001-analisisAlgoritmos/README.md) / [Recursividad](temario/002-recursividad/README.md) / Ordenación / Búsquedas / Hashing / Inmutabilidad</sup>|
 
 </div>
 
