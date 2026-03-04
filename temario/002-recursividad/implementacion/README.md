@@ -48,5 +48,12 @@ Implementación de [ejercicios ya identificados](../estructuracion/README.md): e
 |[05](./05-multiples-llamadas-condicional.md)|Múltiples llamadas (condicional)|Bifurcación controlada|
 |[06](./06-multiples-llamadas-ambas.md)|Múltiples llamadas (ambas)|Recursión ramificada (árbol)|
 |[07](./07-interrupcion-recursiva.md)|Interrupción de caso recursivo|Preparación para backtracking|
+|[08](./08-el-estado.md)|El estado en la recursión|Comprender cómo viaja el estado por las llamadas|
+|[09](./09-hacer-y-deshacer.md)|Hacer y deshacer|El movimiento fundamental del backtracking|
+|[10](./10-el-arbol-de-decisiones.md)|El árbol de decisiones|El árbol de llamadas como espacio de búsqueda|
+|[11](./11-una-solucion.md)|Una solución|Patrón find-first: propagar el éxito|
+|[12](./12-todas-las-soluciones.md)|Todas las soluciones|Patrón find-all: explorar sin parar|
+|[13](./13-poda.md)|Poda|No explorar lo que no puede funcionar|
+|[14](./14-cierre.md)|Backtracking: síntesis|El patrón completo, sus variantes y dónde aparece|
 
 </div>
