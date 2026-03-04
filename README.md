@@ -61,7 +61,7 @@ Evaluar si un algoritmo es viable para el problema en cuestión. Distinguir entr
 
 - Bloque instrumental: las herramientas
   - [x] [Análisis de algoritmos](temario/001-analisisAlgoritmos/README.md)
-  - [ ] [Recursividad](temario/002-recursividad/README.md)
+  - [x] [Recursividad](temario/002-recursividad/README.md)
 - Bloque de organización
   - [ ] [Ordenación](temario/003-ordenacion/README.md)
 - Bloque de recuperación
