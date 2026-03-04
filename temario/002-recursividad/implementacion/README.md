@@ -54,6 +54,6 @@ Implementación de [ejercicios ya identificados](../estructuracion/README.md): e
 |[11](./11-una-solucion.md)|Una solución|Patrón find-first: propagar el éxito|
 |[12](./12-todas-las-soluciones.md)|Todas las soluciones|Patrón find-all: explorar sin parar|
 |[13](./13-poda.md)|Poda|No explorar lo que no puede funcionar|
-|[14](./14-cierre.md)|Backtracking: síntesis|El patrón completo, sus variantes y dónde aparece|
+|[14](./14-cierre.md)|Síntesis: el backtracking|El patrón completo, sus variantes y dónde aparece|
 
 </div>
