@@ -60,10 +60,10 @@ public class Laberinto {
         new Scanner(System.in).nextLine();
 
         int[][] siguientes = { 
-                                { fila - 1, columna },
-                                { fila, columna - 1 },
                                 { fila + 1, columna },
-                                { fila, columna + 1 }
+                                { fila, columna + 1 },
+                                { fila - 1, columna },
+                                { fila, columna - 1 }
                             };
         String[] nombres = { "abajo", "derecha", "arriba", "izquierda" };
 
