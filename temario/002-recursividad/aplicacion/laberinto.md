@@ -43,7 +43,7 @@ El objetivo es encontrar un camino desde la entrada (esquina superior izquierda)
 
 ## Anatomía recursiva
 
-El algoritmo intenta avanzar desde `(x, y)` en cuatro direcciones posibles. Si alguna lleva a la salida, el camino queda marcado. Si ninguna funciona, la celda se descarta y se retrocede.
+El algoritmo intenta avanzar desde `(fila, columna)` en cuatro direcciones posibles. Si alguna lleva a la salida, el camino queda marcado. Si ninguna funciona, la celda se descarta y se retrocede.
 
 Hay cuatro estados de celda:
 
@@ -63,10 +63,10 @@ La matriz `laberinto` es el objeto mutable compartido por todas las llamadas. Ca
 El algoritmo busca una sola solución. En cuanto la encuentra, propaga el éxito hacia arriba sin deshacer nada:
 
 ```java
-if ( resolver(laberinto, x + 1, y) || 
-     resolver(laberinto, x, y + 1) ||
-     resolver(laberinto, x - 1, y) || 
-     resolver(laberinto, x, y - 1)) {
+if (resolver(laberinto, fila + 1, columna) 
+    || resolver(laberinto, fila, columna + 1) 
+    || resolver(laberinto, fila - 1, columna) 
+    || resolver(laberinto, fila, columna - 1)) {
     return true;
 }
 ```
@@ -90,9 +90,9 @@ DESHACER: actual.quitar()            →  camino = [...]   ← igual que al entr
 En el laberinto, el deshacer **no restaura el estado original**:
 
 ```
-HACER:    laberinto[x][y] = CAMINO   →  celda pasa de LIBRE a CAMINO
+HACER:    laberinto[fila][columna] = CAMINO   →  celda pasa de LIBRE a CAMINO
 EXPLORAR: resolver(4 direcciones)
-DESHACER: laberinto[x][y] = VISITADO →  celda pasa de CAMINO a VISITADO
+DESHACER: laberinto[fila][columna] = VISITADO →  celda pasa de CAMINO a VISITADO
 ```
 
 La celda no vuelve a `LIBRE`. Queda marcada como `VISITADO`.
@@ -118,26 +118,26 @@ La conclusión es que el hacer/deshacer del [Paso 09](../implementacion/09-hacer
 ## Implementación
 
 ```java
-static boolean resolver(int[][] laberinto, int x, int y) {
-    if (x < 0 || x >= laberinto.length || y < 0 || y >= laberinto[0].length) {
+static boolean resolver(int[][] laberinto, int fila, int columna) {
+    if (fila < 0 || fila >= laberinto.length || columna < 0 || columna >= laberinto[0].length) {
         return false;
     }
-    if (laberinto[x][y] != LIBRE) {
+    if (laberinto[fila][columna] != LIBRE) {
         return false;
     }
-    if (x == laberinto.length - 1 && y == laberinto[0].length - 1) {
-        laberinto[x][y] = CAMINO;
+    if (fila == laberinto.length - 1 && columna == laberinto[0].length - 1) {
+        laberinto[fila][columna] = CAMINO;
         return true;
     }
 
-    laberinto[x][y] = CAMINO;                                      // HACER
+    laberinto[fila][columna] = CAMINO;                                      // HACER
 
-    if (resolver(laberinto, x + 1, y) || resolver(laberinto, x, y + 1) ||
-        resolver(laberinto, x - 1, y) || resolver(laberinto, x, y - 1)) {
+    if (resolver(laberinto, fila + 1, columna) || resolver(laberinto, fila, columna + 1) ||
+        resolver(laberinto, fila - 1, columna) || resolver(laberinto, fila, columna - 1)) {
         return true;                                               // propagar éxito
     }
 
-    laberinto[x][y] = VISITADO;                                    // DESHACER (≠ LIBRE)
+    laberinto[fila][columna] = VISITADO;                                    // DESHACER (≠ LIBRE)
     return false;
 }
 ```
