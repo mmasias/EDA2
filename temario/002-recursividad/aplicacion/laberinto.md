@@ -11,7 +11,7 @@ El laberinto es el primer ejemplo de backtracking aplicado a un espacio con form
 
 ## El problema
 
-Un laberinto representado como una matriz de enteros: `0` es celda libre, `1` es pared. El punto de entrada es la celda `(0, 0)` y la salida es la celda `(filas-1, columnas-1)`. El objetivo es encontrar un camino desde la entrada hasta la salida.
+Un laberinto representado como una matriz de enteros: `0` es celda libre, `1` es pared. El punto de entrada es la celda `(0, 0)` y la salida es la celda `(filas-1, columnas-1)`. 
 
 ```
  ·  [ ]  ·   ·  [ ]  ·   ·  [ ]  ·   ·  [ ]  ·   ·   ·
@@ -22,6 +22,21 @@ Un laberinto representado como una matriz de enteros: `0` es celda libre, `1` es
  ·   ·   ·  [ ]  ·   ·  [ ]  ·   ·   ·   ·   ·  [ ]  ·
 [ ] [ ]  ·  [ ]  ·   ·  [ ] [ ]  ·  [ ]  ·   ·  [ ]  ·
  ·   ·   ·   ·   ·  [ ]  ·   ·   ·   ·   ·  [ ]  ·   ·
+```
+
+El objetivo es encontrar un camino desde la entrada (esquina superior izquierda) hasta la salida (esquina inferior derecha).
+
+```
+==========================================
+ * [ ] *  *  *  *  · [ ] x  x [ ] *  *  * 
+ * [ ] * [ ][ ] * [ ][ ] x [ ][ ] * [ ] * 
+ *  *  * [ ] *  * [ ] *  * [ ] ·  * [ ] * 
+[ ][ ] · [ ] *  *  *  *  * [ ] ·  * [ ] * 
+ · [ ] · [ ][ ][ ][ ][ ] * [ ][ ] * [ ] * 
+ ·  ·  · [ ] ·  · [ ] x  *  x  *  * [ ] * 
+[ ][ ] · [ ] ·  · [ ][ ] * [ ] *  · [ ] * 
+ ·  ·  ·  ·  · [ ] x  x  *  *  * [ ] ·  * 
+==========================================
 ```
 
 ## Anatomía recursiva
