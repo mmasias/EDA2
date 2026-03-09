@@ -64,7 +64,6 @@ class UnaSolucion {
 Solución: [1, 2, 4]
 ```
 
-
 ### Traza: cómo llega a `[1, 2, 4]`
 
 <div align=center>
@@ -75,7 +74,6 @@ Solución: [1, 2, 4]
 |<div align=right> [*Codigo fuente*](/modelosUML/11-una-solucion.puml)</div>
 
 </div>
-
 
 ### Lo que cambia respecto al Paso 09
 
@@ -90,7 +88,6 @@ Solución: [1, 2, 4]
 |Árbol explorado|Completo|Hasta la primera hoja válida|
 
 </div>
-
 
 ### El momento crítico: éxito vs fracaso
 

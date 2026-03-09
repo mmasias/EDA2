@@ -1,7 +1,7 @@
 <div align=right>
 
 <sub>[Implementación](../implementacion/README.md)</sup><br>
-<sup>[Torre de Hanoi](hanoi.md) / [El laberinto](laberinto.md) / [N Reinas](nreinas.md) / [Flood Fill](floodfill.md)</sub>
+<sup>[Aplicación](README.md) / [Torre de Hanoi](hanoi.md) / [El laberinto](laberinto.md) / [N Reinas](nreinas.md) / [Flood Fill](floodfill.md)</sub>
 
 </div>
 
@@ -184,6 +184,4 @@ Cada disco adicional duplica el número de movimientos. Para `n` discos: `2ⁿ -
 
 Con 64 discos, a un movimiento por segundo, se necesitarían aproximadamente 585 mil millones de años. El crecimiento exponencial no es una curiosidad teórica.
 
----
-
-> [Siguiente: El laberinto →](laberinto.md)
+> [Siguiente: El laberinto](laberinto.md)

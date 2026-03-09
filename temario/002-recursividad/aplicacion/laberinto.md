@@ -1,7 +1,8 @@
 <div align=right>
 
 <sub>[Implementación](../implementacion/README.md)</sup><br>
-<sup>[Torre de Hanoi](hanoi.md) / [El laberinto](laberinto.md) / [N Reinas](nreinas.md) / [Flood Fill](floodfill.md)</sub>
+<sup>[Aplicación](README.md) / [Torre de Hanoi](hanoi.md) / [El laberinto](laberinto.md) / [N Reinas](nreinas.md) / [Flood Fill](floodfill.md)</sub>
+
 </div>
 
 # El laberinto
@@ -36,8 +37,6 @@ Hay cuatro estados de celda:
 | `CAMINO` | 2 | Parte del camino solución |
 | `VISITADO` | 3 | Explorada y descartada |
 
-## Conexión con los pasos anteriores
-
 ### El estado como matriz (Paso 08)
 
 La matriz `laberinto` es el objeto mutable compartido por todas las llamadas. Cada celda que se modifica es visible desde cualquier punto de la pila de llamadas. Esto es exactamente lo que el [Paso 08](../implementacion/08-el-estado.md) describía: un objeto que viaja a través de todos los marcos.
@@ -47,8 +46,10 @@ La matriz `laberinto` es el objeto mutable compartido por todas las llamadas. Ca
 El algoritmo busca una sola solución. En cuanto la encuentra, propaga el éxito hacia arriba sin deshacer nada:
 
 ```java
-if (resolver(laberinto, x + 1, y) || resolver(laberinto, x, y + 1) ||
-    resolver(laberinto, x - 1, y) || resolver(laberinto, x, y - 1)) {
+if ( resolver(laberinto, x + 1, y) || 
+     resolver(laberinto, x, y + 1) ||
+     resolver(laberinto, x - 1, y) || 
+     resolver(laberinto, x, y - 1)) {
     return true;
 }
 ```
@@ -79,7 +80,7 @@ DESHACER: laberinto[x][y] = VISITADO →  celda pasa de CAMINO a VISITADO
 
 La celda no vuelve a `LIBRE`. Queda marcada como `VISITADO`.
 
-**¿Por qué?**
+#### ¿Por qué?
 
 Un laberinto puede tener ciclos. Si la celda `(2, 3)` conecta con `(2, 4)` y `(3, 3)`, y `(3, 3)` conecta de vuelta con `(2, 3)`, restaurar a `LIBRE` al retroceder crearía un bucle infinito: el algoritmo entraría y saldría de las mismas celdas indefinidamente.
 
@@ -89,11 +90,11 @@ Hay una segunda razón, más sutil. El `||` que evalúa las cuatro direcciones t
 
 `VISITADO` cumple por tanto dos funciones a la vez: evita los ciclos infinitos y evita la reexploración de callejones ya conocidos entre las diferentes ramas del `||`.
 
-| | Subconjuntos | Laberinto |
-| --- | --- | --- |
-| ¿El espacio tiene ciclos? | No (árbol de decisiones) | Sí (grafo) |
-| ¿Qué hace el deshacer? | Restaura a estado original | Marca como visitado |
-| ¿Puede volver a la misma celda/elemento? | No (el índice avanza) | Sin la marca, sí |
+||Subconjuntos|Laberinto|
+|---|---|---|
+|¿El espacio tiene ciclos?|No (árbol de decisiones)|Sí (grafo)|
+|¿Qué hace el deshacer?|Restaura a estado original|Marca como visitado|
+|¿Puede volver a la misma celda/elemento?|No (el índice avanza)|Sin la marca, sí|
 
 La conclusión es que el hacer/deshacer del [Paso 09](../implementacion/09-hacer-y-deshacer.md) describe el principio general: al retroceder, el estado debe quedar tal que la exploración desde arriba sea correcta. En un árbol eso significa restaurar exactamente. En un grafo significa marcar para no repetir.
 
@@ -150,8 +151,6 @@ Una observación: el algoritmo no tiene memoria de qué dirección funcionó en 
 
 Una mejora posible: recordar la última dirección que llevó a avanzar y probarla primero en la siguiente celda. Eso no cambiaría la corrección del algoritmo ni el resultado final, pero reduciría el número de intentos fallidos. Es la diferencia entre exploración ciega y exploración informada.
 
-Esa idea tiene nombre: **heurística**. Y es el punto de partida de algoritmos como A*, que combinan backtracking con estimaciones del coste restante para llegar a la solución.
+Esa idea tiene nombre: **heurística**. Es el principio detrás de algoritmos de búsqueda informada que usan estimaciones del coste restante para decidir qué explorar primero, aunque con una estructura completamente distinta a la de este algoritmo.
 
----
-
-> [Siguiente: N Reinas →](nreinas.md)
+> [Siguiente: N Reinas](nreinas.md)
