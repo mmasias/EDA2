@@ -23,10 +23,10 @@ public class Laberinto {
 
         laberinto[fila][columna] = CAMINO;
 
-        if (resolver(laberinto, fila - 1, columna) || 
-            resolver(laberinto, fila, columna - 1) ||
-            resolver(laberinto, fila + 1, columna) || 
-            resolver(laberinto, fila, columna + 1)) {
+        if (resolver(laberinto, fila + 1, columna) || 
+            resolver(laberinto, fila, columna + 1) ||
+            resolver(laberinto, fila - 1, columna) || 
+            resolver(laberinto, fila, columna - 1)) {
             return true;
         }
 
