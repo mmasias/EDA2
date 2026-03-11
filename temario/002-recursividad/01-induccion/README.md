@@ -8,8 +8,6 @@
 
 # Acerca de los patrones, temporales y estructurales
 
-> Antes de esto, [conviene ver...](prePatrones.md)
-
 ## ¿Por qué?
 
 El lenguaje común usa términos como *repetición*, *ciclo*, *patrón*, *recurrencia* de forma intercambiable. Esta imprecisión léxica oculta diferencias estructurales fundamentales entre fenómenos que superficialmente parecen similares.
