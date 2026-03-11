@@ -25,3 +25,19 @@ El primer ejemplo de backtracking aplicado a un espacio con forma de grafo. A di
 El artículo examina por qué el deshacer en este problema no restaura el estado original sino que marca la celda como `VISITADO`. Esa diferencia tiene dos causas concretas: evitar bucles infinitos en grafos con ciclos y evitar la reexploración de callejones ya conocidos entre las ramas del `||`.
 
 > *Patrón central: backtracking find-first (Pasos 08, 09, 11) con hacer/deshacer asimétrico.*
+
+## [N Reinas](nreinas.md)
+
+El ejemplo canónico de backtracking con poda explícita. La poda tiene nombre propio —`puedeColocar`— y eso no es cosmético: separa qué se explora de si se puede explorar, haciendo el algoritmo legible como dos piezas independientes.
+
+El artículo presenta las variantes find-first y find-all, señala la diferencia exacta entre ambas (dos líneas), y explica por qué `puedeColocar` solo mira hacia la izquierda. También hace visible algo que los textos suelen omitir: cuando se retira una reina, el backtracking es literalmente visible —la reina se mueve a la fila siguiente de su columna.
+
+> *Patrón central: backtracking con poda (Pasos 08, 09, 11, 12, 13).*
+
+## [Flood Fill](floodfill.md)
+
+El algoritmo detrás del bote de pintura de cualquier editor de imagen. A diferencia de todos los algoritmos anteriores, el cambio de estado no es un medio para encontrar algo: es el resultado en sí mismo.
+
+El artículo examina por qué no hay hacer/deshacer —las modificaciones son permanentes e intencionales— y por qué eso lo distingue del backtracking. También contrasta con el laberinto: ambos usan una matriz y marcan celdas para no revisitarlas, pero el significado de la marca es opuesto. En el laberinto `VISITADO` señala fracaso; en Flood Fill el color nuevo señala éxito.
+
+> *Patrón central: recursión multidireccional con estado permanente (Pasos 06, 08). Sin exploración, sin hacer/deshacer.*
